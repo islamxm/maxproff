@@ -1130,10 +1130,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			const self = e.currentTarget;
 			const subBtn = self.querySelector('.main__menu_item_ar_link');
 			const subMenu = self.querySelector('.main__submenu');
-
+			
 			self.classList.toggle('opened');
-
-
+			
+			
 			if(self.classList.contains('opened')) {
 				subMenu.style.height = subMenu.scrollHeight + 'px';
 			} else {

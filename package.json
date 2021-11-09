@@ -39,6 +39,7 @@
     ">0.5%"
   ],
   "dependencies": {
-    "@fancyapps/ui": "^4.0.8"
+    "@fancyapps/ui": "^4.0.8",
+    "micromodal": "^0.4.6"
   }
 }
