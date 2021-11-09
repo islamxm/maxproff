@@ -1,0 +1,98 @@
+<form class="mainform">
+    <div class="mainform__title">
+        РАССЧИТАЙТЕ стоимость ремонта
+    </div>
+    <div class="mainform__content">
+        <!-- Вид ремонта: -->
+        <div class="mainform__rep">
+            <div class="mainform__name">
+                Вид ремонта:
+            </div>
+            <div class="mainform__rep_wrap">
+                <div class="mainform__rep_item">
+                    <input id="cosmetic" type="radio" name="repair_type">
+                    <label for="cosmetic">Косметический</label>
+                </div>
+                <div class="mainform__rep_item">
+                    <input id="capital" type="radio" name="repair_type">
+                    <label for="capital">Капитальный</label>
+                </div>
+                <div class="mainform__rep_item">
+                    <input id="full" type="radio" name="repair_type">
+                    <label for="full">Под ключ</label>
+                </div>
+                <div class="mainform__rep_item">
+                    <input id="design" type="radio" name="repair_type">
+                    <label for="design">Дизайнерский</label>
+                </div>
+            </div>
+        </div>
+        <!-- Тип вашей недвижимости: -->
+        <div class="mainform__est">
+            <div class="mainform__name">
+                Тип вашей недвижимости:
+            </div>
+            <div class="mainform__est_wrap">
+                <div class="mainform__est_item">
+                    <input id="newbuild" type="radio" name="estate_type">
+                    <label for="newbuild">Новостройка</label>
+                </div>
+                <div class="mainform__est_item">
+                    <input id="sec" type="radio" name="estate_type">
+                    <label for="sec">Вторичное жилье</label>
+                </div>
+            </div>
+        </div>
+        <!-- Количество комнат -->
+        <div class="mainform__rooms">
+            <div class="mainform__name">
+                Количество комнат
+            </div>
+            <div class="mainform__rooms_wrap">
+                <div class="mainform__rooms_item">
+                    <input id="1" type="radio" name="rooms">
+                    <label for="1">1</label>
+                </div>
+                <div class="mainform__rooms_item">
+                    <input id="2" type="radio" name="rooms">
+                    <label for="2">2</label>
+                </div>
+                <div class="mainform__rooms_item">
+                    <input id="3" type="radio" name="rooms">
+                    <label for="3">3</label>
+                </div>
+                <div class="mainform__rooms_item">
+                    <input id="4" type="radio" name="rooms">
+                    <label for="4">4</label>
+                </div>
+            </div>
+        </div>
+        <!-- Площадь, м2: -->
+        <div class="mainform__sq">
+            <div class="mainform__name">
+                Площадь, м2:
+            </div>
+            <div class="mainform__sq_wrap">
+                <input class="mainform__sq_range range" type="range" min="0" max="250" value="0" step="1">
+                <div class="mainform__sq_block range-block">0</div>
+            </div>
+        </div>
+        <div class="mainform__total">
+            <div class="mainform__total_term">
+                Срок ремонта:
+                <span>до 34 дней</span>
+            </div>
+            <div class="mainform__total_discount">
+                Скидка составит:
+                <span>23 765 руб</span>
+            </div>
+        </div>
+        <div class="mainform__send">
+            <div class="mainform__name">Введите номер телефона</div>
+            <div class="mainform__send_wrap">
+                <input class="mainform__send_tel" type="number" placeholder="+7">
+                <button class="btn" type="submit">Узнать стоимость</button>
+            </div>
+        </div>
+    </div>
+</form>

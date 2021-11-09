@@ -1,0 +1,69 @@
+.feedback {
+	border-radius: 7px;
+	background-color: #fff;
+	padding: 82px 50px 93px 50px;
+	&__title {
+		font-weight: 900;
+		font-size: 22px;
+		line-height: 26px;
+		text-transform: uppercase;
+		margin-bottom: 31px;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		line-height: 16.5px;
+		margin-bottom: 31px;
+		max-width: 251px;
+
+		span {
+			color: $green;
+		}
+	}
+
+
+	&__body {
+
+		label {
+			font-size: 14px;
+			line-height: 16.5px;
+			color: #595959;
+			margin-bottom: 11px;
+		}
+
+		input {
+			border: 1px solid #ccc;
+			padding: 12px;
+			width: 319px;
+		}
+
+		&_name {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 12px;
+
+		}
+
+		&_tel {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 37px;
+		}
+		&_btn {
+			margin-bottom: 18px;
+			button {
+				width: 100%;
+				padding: 14px 0;
+			}
+		}
+
+		&_link {
+			font-size: 13px;
+			line-height: 15.23px;
+			max-width: 305px;
+			a {
+				color: $green;
+			}
+		}
+	}
+}

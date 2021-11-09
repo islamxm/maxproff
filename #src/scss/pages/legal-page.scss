@@ -1,0 +1,47 @@
+.legal-page {
+
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__content {
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+		.section {
+
+			&__title {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 300;
+				margin-bottom: 20px;
+
+			}
+		}
+	}
+}
+
+@media (max-width: 757px) {
+	.legal-page {
+
+		&__title {
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 33px;
+		}
+	}
+}

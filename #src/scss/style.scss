@@ -1,0 +1,51 @@
+//LIBS
+@import './libs/swiper.scss';
+@import './libs/fancybox.scss';
+
+//OVERALL
+@import './components/vars.scss';
+@import './components/global.scss';
+@import './components/animations.scss';
+@import './components/pagination.scss';
+
+
+//BLOCKS
+@import './blocks/header.scss';
+@import './blocks/prev.scss';
+@import './blocks/price.scss';
+@import './blocks/serv.scss';
+@import './blocks/how.scss';
+@import './blocks/sklad.scss';
+@import './blocks/control.scss';
+@import './blocks/benefits.scss';
+@import './blocks/rev.scss';
+@import './blocks/team.scss';
+@import './blocks/masters.scss';
+@import './blocks/youtube.scss';
+@import './blocks/feed.scss';
+@import './blocks/faq.scss';
+@import './blocks/consult.scss';
+@import './blocks/footer.scss';
+@import './blocks/port.scss';
+@import './blocks/mainform.scss';
+@import './blocks/feedback.scss';
+@import './blocks/header-burger-menu.scss';
+
+
+
+//PAGES
+@import './pages/price-page.scss';
+@import './pages/404-page.scss';
+@import './pages/contacts-page.scss';
+@import './pages/blog-page.scss';
+@import './pages/article-page.scss';
+@import './pages/serv-page.scss';
+@import './pages/prod-page.scss';
+@import './pages/legal-page.scss';
+@import './pages/prod-item.scss';
+@import './pages/port-page.scss';
+
+
+//MEDIA
+@import './components/media.scss';
+

@@ -1,0 +1,179 @@
+.rev {
+	padding-top: 29px;	
+	padding-bottom: 43px;	
+	background-color: #F8f8f8;
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 29px;
+	}
+
+	&__content {
+		
+
+		&_wrapper {
+			display: flex;	
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		&_item {
+			max-width: 	586px;
+			background-color: #fff;
+			margin-bottom: 29px;	
+			filter: drop-shadow(0px 0px 10px rgba(171, 171, 171, 0.25));
+			&_prev {
+				position: relative;	
+				cursor: pointer;	
+
+				&:hover {
+					&:after {
+						transform: scale(1.1);
+					}
+				}
+				
+				&:after {
+					position: absolute;	
+					content: url('../img/play.png');
+					top: calc(50% - 30px);
+					left: calc(50% - 30px);
+					cursor: pointer;
+					z-index: 100;	
+					transition: all .3s ease;
+				}
+				&_placehold {
+					height: 298px;	
+					width: 586px;	
+					background-color: #555;
+				}
+			}
+
+			&_descr {
+				padding: 15px 25px;
+				&_info {
+					font-size: 14px;	
+					line-height: 16.5px;	
+					margin-bottom: 3px;	
+					span {
+						color: $green;
+						text-transform: uppercase;
+						font-size: 18px;	
+						line-height: 21px;	
+						font-weight: 700;	
+					}
+				}
+
+				&_adress {
+					font-size: 14px;	
+					line-height: 16.5px;	
+					padding-left: 	20px;
+					position: relative;	
+
+					&:after {
+						position: absolute;	
+						left: 0;	
+						top: -2px;	
+						content: url('../img/geo.svg');
+					}
+				}
+			}
+		}
+	}
+	&__slider_pag {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.rev {
+
+		&__content {
+
+			&_wrapper {
+				flex-wrap: nowrap;
+			}
+
+			&_item {
+				max-width: unset;
+
+				&_prev {
+					&_placehold {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		&__slider_pag {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+			.pag {
+				width: 16px;
+				height: 16px;
+				border-radius: 100%;
+				border: 2px solid $blue;
+				display: block;
+				margin: 0 4.5px;
+			}
+			.pag__active {
+				width: 16px;
+				height: 16px;
+				border-radius: 100%;
+				border: 2px solid $blue;
+				display: block;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					content: '';
+					width: 10px;
+					height: 10px;
+					background-color: $blue;
+					border-radius: 100%;
+					top: calc(50% - 5px);
+					left: calc(50% - 5px);
+					z-index: 100;
+				}
+			}
+			.pag__current {
+				width: 16px;
+				height: 16px;
+				border-radius: 100%;
+				border: 2px solid $blue;
+				display: block;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					content: '';
+					width: 10px;
+					height: 10px;
+					background-color: $blue;
+					border-radius: 100%;
+					top: calc(50% - 5px);
+					left: calc(50% - 5px);
+					z-index: 100;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.rev {
+
+		&__content {
+
+			&_item {
+				&_descr {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

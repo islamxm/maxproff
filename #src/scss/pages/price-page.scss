@@ -1,0 +1,23 @@
+.price-page__content {
+	background-color: #f8f8f8 !important;
+	width: 100%;
+	padding: 42px 0 71px;
+}
+
+.price-page__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+
+	.price-page__content {
+
+		.mainform {
+			display: none;
+		}
+		.feedback {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,167 @@
+.feed {
+	background-image: url('../img/feed-bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 77px 0 101px 0;
+	&__inner {
+
+	}
+	&__title {
+		text-align: left;
+		margin-bottom: 18px;
+	}
+	&__subtitle {
+		text-align: left;
+		margin-bottom: 52px;
+		line-height: 19px;
+		max-width: 550px;
+
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		&_left {
+			// max-width: 590px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 54px 0 28px 0;
+			width: 49%;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
+			&_text {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 34px;
+				&_name {
+					line-height: 19px;
+					margin-right: 27px;
+				}
+				&_price {
+					font-weight: 500;
+					color: #595959;
+					span {
+						color: #fff;
+						font-size: 42px;
+						line-height: 49px;
+						padding: 4px 9px;
+						background-color: $blue;
+						border-radius:9px;
+						font-weight: 700;
+					}
+				}
+			}
+			&_btn {
+				padding: 13px 31px;
+			}
+		}
+		&_brands {
+			width: 49%;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+
+
+			&_item {
+				width: 33%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media(max-width: 1200px) {
+	.feed {
+
+		&__title {
+			margin-bottom: 8px;
+		}
+		&__subtitle {
+			margin-bottom: 8px;
+		}
+
+		&__content {
+			flex-wrap: wrap;
+
+			&_left {
+				width: 100%;
+				order: 2;
+				flex-direction: row;
+				padding: 20px 30px;
+				justify-content: space-between;
+
+				&_text {
+					margin-bottom: 0;
+					&_name {
+						margin-right: 0;
+						display: flex;
+						align-items: center;
+					}
+
+					&_price {
+						span {
+							display: inline-block;
+						}
+					}
+				}
+				&_btn {
+					padding: 14px 18px;
+				}
+			}
+			&_brands {
+				width: 100%;
+				order: 1;
+				margin-bottom: 10px;
+				
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.feed {
+		padding: 42px 0;
+		&__title {
+			text-align: center;
+			max-width: 350px;
+			margin: 0 auto;
+		}
+		&__subtitle {
+			text-align: center;
+			max-width: 373px;
+			margin: 0 auto;
+		}
+		&__content {
+
+			&_left {
+				flex-direction: column;
+				width: 100%;
+				&_text {
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 18px;
+					&_name {
+						margin-bottom: 18px;
+						text-align: center;
+					}
+
+				}
+				&_btn {
+					width: 100%;
+					text-align: center;
+				}
+			}
+			&_brands {
+				&_item {
+					width: 50%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

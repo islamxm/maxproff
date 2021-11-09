@@ -1,0 +1,53 @@
+.pagination {  //pagination container (el)
+	display: flex;
+	justify-content: center;
+	.pagination__item { //pagination bullet (bulletClass)
+		height: 17px;
+		width: 17px;
+		border: 1px solid $blue;
+		display: inline-block;
+		border-radius: 100%;
+
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+	} 
+
+	.pagination__item_active { //pagination bullet active (bulletActiveClass)
+		height: 17px;
+		width: 17px;
+		border: 1px solid $blue;
+		position: relative;
+		border-radius: 100%;
+
+		&:after {
+			position: absolute;
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $blue;
+			left: calc(50% - 5px);
+			top: calc(50% - 5px);
+			border-radius: 100%;
+		}
+	}
+
+	.pagination__item_current { //pagination current bullet of active slide index (currentClass)
+		height: 17px;
+		width: 17px;
+		border: 1px solid $blue;
+		position: relative;
+		border-radius: 100%;
+
+		&:after {
+			position: absolute;
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $blue;
+			left: calc(50% - 5px);
+			top: calc(50% - 5px);
+			border-radius: 100%;
+		}
+	}	
+}

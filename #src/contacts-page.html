@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        @@include('./blocks/header.html')
+        <main class="main">
+
+            <div class="contacts-page">
+                <div class="container">
+                    <div class="contacts-page__inner">
+                        <h1 class="contacts-page__title section-title">Контакты</h1>
+                    </div>
+                    <div class="contacts-page__content">
+
+
+                        <div class="contacts-page__soc">
+                            <div class="contacts-page__name">Мы в соц сетях:</div>
+                            <div class="contacts-page__soc_list">
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/fb.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/yt.svg" alt="youtube">
+                                </a>
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/inst.svg" alt="instagram">
+                                </a>
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/tg.svg" alt="telegram">
+                                </a>
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/vk.svg" alt="vk">
+                                </a>
+                                <a href="#" class="contacts-page__soc_item">
+                                    <img src="./img/ok.png" alt="odnoklassniki">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="contacts-page__tel">
+                            <div class="contacts-page__name">Телефон:</div>
+                            <a href="tel:+72332222222" class="contacts-page__tel_link">+7 (233) 222-22-22</a>
+                            <div class="contacts-page__tel_time">08:00 - 22:00, без выходных</div>
+                        </div>
+
+
+                        <div class="contacts-page__adr">
+                            <div class="contacts-page__name">Адрес:</div>
+                            <div class="contacts-page__adr_text">
+                                Адрес
+                            </div>
+                            <a href="#" class="contacts-page__adr_link">Мы на карте</a>
+                        </div>
+
+
+                        <div class="contacts-page__yur">
+                            <div class="contacts-page__name">
+                                ООО “MAXPROFF”
+                            </div>
+                            <div class="contacts-page__yur_list">
+                                <div class="contacts-page__yur_item">
+                                    <span>ИНН: </span>88888888888
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>КПП: </span>88888888888
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>ОГРН: </span>88888888888
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>Расч.счет: </span>888888888889999 (уор) г. Москва
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>Корр.счет: </span>888888888889999
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>БИК: </span>88888888888
+                                </div>
+                                <div class="contacts-page__yur_item">
+                                    <span>Юр. адрес: </span>88888 г. Москва
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="contacts-page__mes">
+                            <div class="contacts-page__name">
+                                Напишите нам:
+                            </div>
+                            <div class="contacts-page__mes_list">
+                                <a href="#" class="contacts-page__mes_item mail">электронная почта@</a>
+                                <a href="#" class="contacts-page__mes_item telegram">Написать в Тelegram</a>
+                                <a href="#" class="contacts-page__mes_item viber">Написать в Viber </a>
+                                <a href="#" class="contacts-page__mes_item whatsapp">Написать в WhatsApp</a>
+                            </div>
+                        </div>
+
+                        @@include('./blocks/feedback.html')
+
+                    </div>
+                </div>
+            </div>
+            @@include('./blocks/consult.html')
+        </main>
+        @@include('./blocks/footer.html')
+        @@include('./blocks/header-burger-menu.html')
+        <script src="./js/bundle.js"></script>
+    </body>
+</html>

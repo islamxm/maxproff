@@ -1,0 +1,163 @@
+.youtube {
+	padding: 71px 0 88px 0;
+	&__inner {
+
+	}
+	&__title {
+		margin-bottom: 49px;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&_item {
+			flex:0 0 32%;
+			height: 226px;
+			background-color: #555555;
+			cursor: pointer;
+			margin-bottom: 19px;
+
+			position: relative;
+
+			&:after {
+				position: absolute;
+				content: url('../img/play.png');
+				top: calc(50% - 30px);
+				left:  calc(50% - 30px);
+				opacity: 0;
+				transition: all .3s ease;
+			}
+
+			&:hover {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	#mainCarousel {
+		width: 383px;
+		margin: 0 auto;
+		.carousel__button {
+			display: none;
+		}
+		.carousel__slide {
+			width: 100%;
+			padding: 0;
+			height: 226px;
+			background-color: #555;
+			position: relative;
+			cursor: pointer;
+
+			&:after {
+				position: absolute;
+				content: url('../img/play.png');
+				top: calc(50% - 30px);
+				left: calc(50% - 30px);
+				opacity: 0;
+				visibility: hidden;
+				transition: all .2s ease;
+				width: 60px;
+				height: 60px;
+			}
+
+			&:hover {
+
+				&:after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		.carousel__slide.is-selected {
+			
+		}
+	}
+
+	&__thumbs {
+		display: none;
+	}
+
+	#thumbCarousel {
+		width: 383px;
+		margin: 0 auto;
+		.carousel__slide {
+			width: 140px;
+			height: 90px;
+			padding: 5px;
+			padding-left: 0;
+			margin-right: 5px;
+
+			.panzoom__content {
+				width: 100%;
+				height: 100%;
+				background-color: #555;
+				opacity: .7;
+			}
+		}
+		.carousel__slide.is-nav-selected {
+			.panzoom__content {
+				opacity: 1;
+			}
+		}
+
+		.carousel__dots {
+
+			.carousel__dot {
+				margin: 0 4px;
+				width: 17px;
+				height: 17px;
+				border: 1px solid $blue;
+				border-radius: 100%;
+
+				&:after {
+					opacity: 0;
+				}
+			}
+			.carousel__dot.is-selected {
+				&:after {
+					opacity: 1;
+					width: 10px;
+					height: 10px;
+					top: 50%;
+					left: 50%;
+					background-color: $blue;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 1200px) {
+	.youtube {
+
+
+		&__title {
+			margin-bottom: 35px;
+		}
+
+		&__content {
+
+			&_item {
+				flex: 0 0 48.5%;
+				margin-bottom: 20px;
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.youtube {
+
+		&__thumbs {
+			display: block;
+		}
+	}
+}

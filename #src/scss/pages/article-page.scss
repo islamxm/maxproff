@@ -1,0 +1,171 @@
+.article-page {
+	padding-bottom: 70px;
+
+	&__inner {
+
+	}
+
+	&__content {
+		background: #FFFFFF;
+		box-shadow: 0px 0px 10px rgba(179, 179, 179, 0.25);
+		border-radius: 7px;
+		padding: 31px 30px;
+		max-width: 989px;
+		margin-bottom: 24px;
+	}
+
+	&__img {
+		max-width: 100%;
+		height: 322px;
+		margin-bottom: 28px;
+		background-color: #ccc;
+		border-radius: 6px;
+	}
+
+	&__descr {
+
+	}
+
+	&__title {
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: 500;
+		margin-bottom: 7px;
+	}
+
+	&__date {
+		font-size: 13px;
+		line-height: 15px;
+		color: #bcbebe;
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 300;
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__ex {
+
+		&_title {
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 30px;
+			margin-bottom: 32px;
+		}
+
+		&_content {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&_item {
+			max-width: 387px;
+			padding: 31px 26px;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 10px rgba(179, 179, 179, 0.25);
+			border-radius: 7px;
+
+			&_img {
+				max-width: 100%;
+				height: 191px;
+				background-color: #ccc;
+				border-radius: 6px;
+				margin-bottom: 27px;
+			}
+			&_descr {
+
+				.title {
+					margin-bottom: 6px;
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 20px;
+
+				}
+				.date {
+					margin-bottom: 18px;
+					font-size: 13px;
+					line-height: 15px;
+					color: #BCBEBE;
+				}
+				.text {
+					font-weight: 300;
+					font-size: 15px;
+					line-height: 20px;
+				}
+			}
+		}
+
+	}
+	
+}
+
+@media (max-width: 1200px) {
+	.article-page {
+
+		&__inner {
+
+
+		}
+
+		&__content {
+
+			margin-bottom: 35px;
+
+		}
+
+		&__text {
+			p {
+				margin-bottom: 15px;
+			}
+		}
+
+		&__ex {
+
+			&_content {
+				flex-wrap: wrap;
+			}
+
+			&_item {
+				max-width: 48%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.article-page {
+		&__text {
+			p {
+				margin-bottom: 15px;
+			}
+		}
+		&__ex {
+
+			&_content {
+
+
+			}
+
+			&_title {
+				margin-bottom: 18px;
+			}
+
+			&_item {
+				max-width: 100%;
+
+				&_img {
+					min-height: 191px;
+					height: auto;
+				}
+			}
+		}
+	}
+
+}

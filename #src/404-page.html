@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        @@include('./blocks/header.html')
+        <main class="main">
+            <div class="bad-page">
+                <div class="container">
+                    <div class="bad-page__inner">
+                        <h1 class="bad-page__title section-title">404</h1>
+                        <div class="bad-page__subtitle">
+                            СТРАНИЦА НЕ НАЙДЕНА
+                        </div>
+                        <div class="bad-page__descr">
+                            <p>
+                                Извините, необходимая страница не была найдена на этом сервере.
+                                Она могла быть удалена, или вы ввели неверный адрес
+                            </p>
+                            <p>
+                                Пожалуйста перейдите на главную страницу
+                            </p>
+                        </div>
+
+                        <a href="" class="bad-page__btn btn">Главная MaxProff</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('./blocks/footer.html')
+        @@include('./blocks/header-burger-menu.html')
+        <script src="./js/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,310 @@
+.header {
+
+	&__inner {
+		padding-bottom: 33px;
+	}
+
+	&__burger {
+		display: none;
+	}
+
+	
+
+	&__mob_btn {
+		padding: 6px 18px;
+		display: none;
+		
+
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 23px 0;
+		&_logo {
+
+		}
+
+		&_nav {
+
+			&_list {
+				display: flex;
+			}
+
+			li {
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
+			}
+
+			&_item {
+				display: block;
+				transition: all .2s ease;
+				&:hover {
+					color: #234875;
+				}	
+			}
+
+		
+		}
+
+		&_contacts {
+
+			&_tel {
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 21px;
+				padding-left: 21px;
+				position: relative;
+				display: block;
+				margin-bottom: 5px;
+				&:after {
+					position: absolute;
+					content: url('../img/header-tel.svg');
+					top: 0;
+					left: 0;
+
+				}
+			}
+			&_time {
+				font-size: 14px;
+				line-height: 15px;
+
+			}
+		}
+	}
+
+	&__top_nav_mob {
+		display: none;
+	}
+
+	&__top_social {
+		display: none;
+	}
+
+	&__bottom {
+		border-top: 1px solid $green;
+		border-bottom: 1px solid $green;
+		&_list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-right: 63px;
+
+			li {
+				position: relative;
+
+				&:hover {
+					.header__bottom_item {
+						background-color: $green;
+					}
+					.header__bottom_item_menu {
+						opacity: 1;
+						visibility: visible;
+						appearance: auto;
+						z-index: 100;
+						transform: translateY(0);
+					}
+					.header__bottom_item_drop {
+						&:after {
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
+
+			
+		}
+		&_item {
+			font-weight: 500;
+			padding: 21px 50px;
+			display: block;
+			transition: all ease .2s;
+			position: relative;
+
+
+			&_menu	{
+				position: absolute;
+				background-color: #fff;
+				top: 62px;
+				left: 0;
+				padding: 15px;
+				box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
+				opacity: 0;
+				visibility: hidden;
+				appearance: none;
+				z-index: -1;
+				width: 115%;
+				transition: all .5s ease;
+				transform: translateY(-10px);
+				&-item {
+					padding: 12px 66px 12px 24px;
+					display: block;
+					transition: all .2s ease;
+					border-radius: 3px;
+					border: 1px solid #FFF;
+					&:hover {
+						border-color: $green;
+					}
+				}
+			}
+		}
+
+		&_item_drop {
+			position: relative;
+
+			&:after {
+				position: absolute;
+				top: calc(50% - 10px);
+				right: 30px;
+				content: url('../img/arrow-down.svg');
+				transition: all .4s ease;
+			}
+
+			// &:hover {
+
+			// 	&:after {
+			// 		transform: rotate(180deg);
+			// 	}
+			// }
+		}
+
+	}
+}
+
+@media (max-width: 1200px) {
+
+	
+
+	.header {
+		padding-bottom: 14px;
+
+		&__top {
+			padding: 10px 0;
+
+			&_nav {
+				display: none;
+
+				&_mob {
+					display: block;
+					border-top: 1px solid $green;
+				}
+
+				&_list_mob {
+					display: flex;
+					justify-content: space-between;
+					align-items:center;
+
+				}
+
+				&_item_mob {
+					display: block;
+					padding: 13px 0;
+				}
+			}
+
+			&_social {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				&_item {
+					display: block;
+					margin-right: 15px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+				}
+			}
+
+			&_contacts {
+
+				&_tel {
+					margin-bottom: 3px;
+				}
+			}
+		}
+
+		&__bottom {
+
+			&_list {
+				padding-right: 0;
+			}
+
+			&_item {
+				padding: 9px 10px;
+				margin-right: 60px;
+				font-size: 14px;
+				line-height: 16.41px;
+
+				&:after {
+					right: 5px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px)  {
+	.container {
+		padding: 0 10px;
+	}
+	.header {
+		padding-bottom: 0;
+
+		&__inner {
+			padding: 28px 4px;
+		}
+		&__top {
+			padding: 0;
+		}
+		&__burger {
+			display: block;
+			cursor: pointer;
+
+			span {
+				height: 4px;
+				width: 35px;
+				background-color: $blue;
+				margin-bottom: 4px;
+				display: block;
+			}
+		}
+
+		&__mob_btn {
+			display: block;
+		}
+
+		&__top_nav_mob {
+			display: none;
+		}
+		&__top_contacts {
+			display: none;
+		}
+		&__bottom {
+			display: none;
+		}
+
+		&__top_social {
+			display: none;
+		}
+		&__top_btn {
+			display: none;
+		}
+		&__top_nav {
+			display: none;
+		}
+	}
+}
