@@ -233,3 +233,48 @@
 		display: flex;
 	}
 }
+
+
+
+@media (max-width: 376px) and (max-height: 668px) {
+	.header__burger_menu {
+
+
+		.header__burger_in {
+
+
+			.header__burger_close {
+
+			}
+
+			.main__menu_list {
+				.main__menu_item {
+					margin-bottom: 0;
+				}		
+			}
+
+
+
+
+			.main__menu_item_ar {
+				.main__submenu {
+					li {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.menu__list {
+
+
+				.menu__item {
+					margin-bottom: 10px;
+				}
+			}
+
+
+
+			
+		}
+	}
+} 	
