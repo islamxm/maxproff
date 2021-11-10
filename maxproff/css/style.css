@@ -2733,6 +2733,11 @@ body {
     display: flex;
   }
 }
+@media (max-width: 425px) {
+  .price {
+    padding-top: 225px;
+  }
+}
 .serv {
   padding-bottom: 59px;
   padding-top: 53px;
@@ -7583,6 +7588,9 @@ body {
   }
   .header__burger_menu .header__burger_in .menu__tel {
     padding: 10px 10px;
+  }
+  .header__burger_menu .header__burger_in .menu__item {
+    margin-bottom: 5px !important;
   }
 }
 .price-page__content {
