@@ -24,12 +24,12 @@
 	// display: none;
 	transition: all .2s ease;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: scroll;
 	
 	&:after {
 		position: absolute;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
 		background: rgba(32, 10, 10, 0.55);
 		z-index: 10000;
 		content: '';
@@ -123,6 +123,7 @@
 				padding-left: 24px;
 				padding: 10px 0 10px 24px;	
 				display: block;
+				padding: 5px 0 5px 24px;
 			}
 		}
 		.main__menu_item_ar.opened {
@@ -143,6 +144,7 @@
 			&>a {
 				position: relative;
 
+
 				&:after {
 					position: absolute;
 					content: url('../img/arrow-down.svg');
@@ -154,7 +156,7 @@
 				}
 			}
 			.main__menu_item_ar_link {
-				padding: 10px 0 10px 24px;	
+				padding: 5px 0 5px 24px;	
 				display: block;
 			}
 
@@ -165,7 +167,7 @@
 				transition: all .3s ease;
 
 				li {
-					margin-bottom: 10px;
+					margin-bottom: 5px;
 				}
 
 				.menu__submenu_item	{
@@ -180,10 +182,10 @@
 		.menu__list {
 			padding-left: 24px;
 			// margin-bottom: 31px;
-			overflow: hidden;
 			transition: all .3s ease;
+			overflow: hidden;
 			.menu__item {
-				margin-bottom: 20px;
+				margin-bottom: 5px;
 
 				a {
 					font-size: 16px;
@@ -251,6 +253,7 @@
 			}
 
 			.main__menu_list {
+				margin-bottom: 20px;
 				.main__menu_item {
 					margin-bottom: 0;
 				}		
