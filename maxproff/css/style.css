@@ -7329,11 +7329,11 @@ body {
 }
 
 .header__burger_menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
   display: none;
   -webkit-box-pack: end;
