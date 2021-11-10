@@ -1,8 +1,11 @@
 import Swiper from './libs/swiper.js';
 import { Fancybox, Carousel, Panzoom} from '@fancyapps/ui';
 import mixitup from 'mixitup';
+import MicroModal from 'micromodal';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	MicroModal.init();
 
 	/*Form range slider*/
 	
