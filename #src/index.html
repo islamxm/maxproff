@@ -1443,7 +1443,7 @@
                             
                         </div>
                         <div class="port__btn">
-                            <a href="#" class="btn">Оставить заявку</a>
+                            <button data-micromodal-trigger="popupFeed"  class="btn">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -2214,7 +2214,8 @@
                                     <div class="feed__content_left_text_name">Получите бесплатный сертификат<br> на чистовые материалы номиналом:</div>
                                     <div class="feed__content_left_text_price"><span>30 000</span> руб</div>
                                 </div>
-                                <a href="#" class="feed__content_left_btn btn">Оставить заявку</a>
+                                <button data-micromodal-trigger="popupFeed" class="feed__content_left_btn btn">Оставить заявку</button>
+
                             </div>
                             <div class="feed__content_brands">
                                 <div class="feed__content_brands_item">
@@ -2289,6 +2290,8 @@
 
         <!-- POPUPS -->
         @@include('./blocks/popup-feed.html')
+        @@include('./blocks/popup-calc-next.html')
+        @@include('./blocks/popup-calc-feed.html')
         <script src="./js/bundle.js"></script>
     </body>
 </html>

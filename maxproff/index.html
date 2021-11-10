@@ -71,7 +71,7 @@
 						<img src="./img/telegram.svg" alt="telegram">
 					</a>
 				</div>
-				<button class="header__top_btn btn-transparent">Заказать звонок</button>
+				<button data-micromodal-trigger="popupFeed" class="header__top_btn btn-transparent">Заказать звонок</button>
 			</div>
 			<nav class="header__top_nav_mob">
 				<ul class="header__top_nav_list_mob">
@@ -2003,7 +2003,7 @@
                             
                         </div>
                         <div class="port__btn">
-                            <a href="#" class="btn">Оставить заявку</a>
+                            <button data-micromodal-trigger="popupFeed"  class="btn">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -2774,7 +2774,8 @@
                                     <div class="feed__content_left_text_name">Получите бесплатный сертификат<br> на чистовые материалы номиналом:</div>
                                     <div class="feed__content_left_text_price"><span>30 000</span> руб</div>
                                 </div>
-                                <a href="#" class="feed__content_left_btn btn">Оставить заявку</a>
+                                <button data-micromodal-trigger="popupFeed" class="feed__content_left_btn btn">Оставить заявку</button>
+
                             </div>
                             <div class="feed__content_brands">
                                 <div class="feed__content_brands_item">
@@ -2856,7 +2857,7 @@
                 </div>
             </div>
         
-            <a class="consult__btn">Оставить заявку</a>
+            <button data-micromodal-trigger="popupFeed" class="consult__btn">Оставить заявку</button>
         </div>
     </div>
 </div>
@@ -3034,8 +3035,8 @@
 		</button>
 
 		<div class="header__burger_in_btns">
-			<a href="#" class="call_btn btn">Заказать звонок</a>
-			<a href="#" class="calc_btn btn-transparent">Калькулятор ремонта</a>
+			<button data-micromodal-trigger="popupFeed" class="call_btn btn">Заказать звонок</button>
+			<button data-micromodal-trigger="popupCalcNext" href="#" class="calc_btn btn-transparent">Калькулятор ремонта</button>
 		</div>
 
 		<ul class="main__menu_list">
@@ -3196,6 +3197,102 @@
           </div>
           <button class="btn" type="submit">Оставить заявку</button>
           <div class="popup-feed__body_link">
+            Я даю свое согласие на <a href="#">обработку персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-calc-next" id="popupCalcNext" aria-hidden="true">
+
+
+  <div class="popup-calc-next__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-calc-next__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-calc-next__body" id="modal-1-content">
+        <div class="popup-calc-next__top-text">Вы даже не рассчитаете стоимость ремонта?</div>
+        <h2 class="popup-calc-next__title">ЦЕНА НА СЛЕДУЮЩЕМ ЭКРАНЕ</h2>
+        <h3 class="popup-calc-next__ask">КАКОЙ РЕМОНТ ВАМ НУЖЕН?</h3>
+        <form class="popup-calc-next__form">
+          
+          <div class="popup-calc-next__sq">
+            <label for="">Площадь, м2</label>
+            <div class="popup-calc-next__sq_wrap">
+              <input class="popup-calc-next__sq_range calc-next-range" type="range" min="0" max="250" value="0" step="1">
+              <div class="popup-calc-next__sq_block calc-next-range-block">0</div>
+            </div>
+          </div>
+          <div class="popup-calc-next__type">
+            <div class="popup-calc-next__type_name">Вид ремонта</div>
+            <div class="popup-calc-next__type_wr">
+              <input type="radio" id="capitaL" name="type_of_rep">
+              <label for="capitaL">Капитальный</label>
+              <input type="radio" id="cosmetiC" name="type_of_rep">
+              <label for="cosmetiC">Косметиеский</label>
+              <input type="radio" id="fulL" name="type_of_rep">
+              <label for="fulL">Под ключ</label>
+            </div>   
+          </div>
+          <div class="popup-calc-next__bottom">
+            <div class="popup-calc-next__bottom_tel">
+              <label for="modalTel">Введите номер телефона</label>
+              <input id="modalTel" type="number" placeholder="+7">
+            </div>
+            <button class="btn" type="submit">Расчитать</button>
+          </div>
+
+          <div class="popup-calc-next__link">
+            Я даю свое согласие на <a href="#">обработку персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-calc-feed" id="popupCalcFeed" aria-hidden="true">
+
+
+  <div class="popup-calc-feed__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-calc-feed__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-calc-feed__body" id="modal-1-content">
+        <h2 class="popup-calc-feed__body_title">ОТПРАВЬТЕ ЗАЯВКУ НА РАСЧЁТ</h2>
+        <ul class="popup-calc-feed__body_list">
+          <li class="popup-calc-feed__body_item">Уборка квартиры за наш счет</li>
+          <li class="popup-calc-feed__body_item">Гарантия 3 года на ремонт</li>
+          <li class="popup-calc-feed__body_item">Материалы по цене производителя</li>
+        </ul>
+        <form class="popup-calc-feed__body_form">
+          
+          <div class="popup-calc-feed__body_name">
+            <label>Введите ваше имя
+              <input type="text">
+            </label>
+            
+          </div>
+          <div class="popup-calc-feed__body_tel">
+            <label>Введите номер телефона
+              <input type="number" placeholder="+7">
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Оставить заявку</button>
+          <div class="popup-calc-feed__body_link">
             Я даю свое согласие на <a href="#">обработку персональных данных</a>
           </div>
         </form>

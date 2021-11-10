@@ -26,6 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
+	let rangeInputModal = document.querySelector('.calc-next-range');
+	let rangeValueBlockModal = document.querySelector('.calc-next-range-block');
+
+	function rangeSliderModal() {
+		let rangeInputVal = document.querySelector('.calc-next-range').value;
+		let rangeInputValforBg = (rangeInputVal * 100) / 250;
+		rangeInputModal.style.cssText = `background:-webkit-linear-gradient(left, #2D4872 0%, #2D4872 ${rangeInputValforBg}%, #f2f2f2 ${rangeInputValforBg}%, #f2f2f2 100%)`;
+		rangeInputModal.setAttribute('value', rangeInputVal);
+		rangeInputModal.setAttribute('step', '1');
+		rangeValueBlockModal.innerText = rangeInputVal;
+	}
+
+	if(rangeInputModal) {
+		rangeInputModal.addEventListener('input', rangeSliderModal);
+	}	
+
+
 
 	/*Price slider*/
 
