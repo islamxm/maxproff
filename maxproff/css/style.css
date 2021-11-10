@@ -7369,6 +7369,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 150px 20px;
+  padding-bottom: 100px;
   z-index: 100000;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -7496,6 +7497,10 @@ body {
 }
 .header__burger_menu .header__burger_in .menu__list {
   padding-left: 24px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .header__burger_menu .header__burger_in .menu__list .menu__item {
   margin-bottom: 20px;
@@ -7559,6 +7564,21 @@ body {
   }
   .header__burger_menu .header__burger_in .menu__list .menu__item {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 321px) and (max-height: 569px) {
+  .header__burger_menu .header__burger_in {
+    padding: 70px 20px;
+    padding-top: 110px;
+  }
+  .header__burger_menu .header__burger_in .header__burger_in_btns {
+    padding: 10px 10px;
+  }
+  .header__burger_menu .header__burger_in .header__burger_in_btns .call_btn {
+    margin-bottom: 5px;
+  }
+  .header__burger_menu .header__burger_in .menu__tel {
+    padding: 10px 10px;
   }
 }
 .price-page__content {

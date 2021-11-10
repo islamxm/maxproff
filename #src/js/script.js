@@ -1118,6 +1118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const burgerSubmenuHeaders = document.querySelectorAll('.main__menu_item_ar_link');
 	const burgrerMenuItems = document.querySelectorAll('.main__menu_item_ar');
 	const burgerSubmenus = document.querySelectorAll('.main__submenu');
+	const secMenu = document.querySelector('.menu__list');
 
 	burgerSubmenuHeaders.forEach(i => {
 		i.addEventListener('click', (e) => {
@@ -1166,6 +1167,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			} 
 			if (!self.classList.contains('opened')) {
 				subMenu.style.height = '0';
+			}
+
+
+			/*For second menu*/
+			if(i.classList.contains('opened')) {
+				secMenu.style.height = '0';
+			} else {
+				secMenu.style.height = secMenu.scrollHeight + 'px';
 			}
 
 		})
