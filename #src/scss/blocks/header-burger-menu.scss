@@ -109,7 +109,6 @@
 			text-align: center;
 		}
 		.main__menu_list {
-			overflow-y: scroll;
 			margin-bottom: 30px;
 		}	
 
@@ -168,10 +167,11 @@
 					margin-bottom: 10px;
 				}
 
-				&_item {
+				.menu__submenu_item	{
 					font-size: 16px;
 				    line-height: 18.75px;
 				    font-weight: 400;
+				    padding: 5px 0 5px 24px;
 				}
 			}
 		}

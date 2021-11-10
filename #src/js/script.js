@@ -1125,20 +1125,49 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 
+
 	burgrerMenuItems.forEach(i => {
 		i.addEventListener('click', (e) => {
 			const self = e.currentTarget;
 			const subBtn = self.querySelector('.main__menu_item_ar_link');
 			const subMenu = self.querySelector('.main__submenu');
-			
+
+			// if(i.classList.contains('opened')){
+			// 	i.classList.remove('opened');
+				burgerSubmenus.forEach(i => {
+					i.style.height = '0'; 
+				})
+			// }
+			// if(!i.classList.contains('opened')) {
+			// 	burgerSubmenus.forEach(i => {
+			// 		i.style.height = '0'; 
+			// 	})
+			// }
+
+
+
 			self.classList.toggle('opened');
+
+			if(self.classList.contains('opened')) {
+				i.classList.remove('opened');
+				burgrerMenuItems.forEach(i => {
+					i.classList.remove('opened');
+				})
+				burgerSubmenus.forEach(i => {
+					i.style.height = '0'; 
+				})
+				self.classList.add('opened');
+			}
 			
-			
+
 			if(self.classList.contains('opened')) {
 				subMenu.style.height = subMenu.scrollHeight + 'px';
-			} else {
+
+			} 
+			if (!self.classList.contains('opened')) {
 				subMenu.style.height = '0';
 			}
+
 		})
 	})
 

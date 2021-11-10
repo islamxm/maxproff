@@ -7437,7 +7437,6 @@ body {
   text-align: center;
 }
 .header__burger_menu .header__burger_in .main__menu_list {
-  overflow-y: scroll;
   margin-bottom: 30px;
 }
 .header__burger_menu .header__burger_in .main__menu_item {
@@ -7489,10 +7488,11 @@ body {
 .header__burger_menu .header__burger_in .main__menu_item_ar .main__submenu li {
   margin-bottom: 10px;
 }
-.header__burger_menu .header__burger_in .main__menu_item_ar .main__submenu_item {
+.header__burger_menu .header__burger_in .main__menu_item_ar .main__submenu .menu__submenu_item {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 400;
+  padding: 5px 0 5px 24px;
 }
 .header__burger_menu .header__burger_in .menu__list {
   padding-left: 24px;
