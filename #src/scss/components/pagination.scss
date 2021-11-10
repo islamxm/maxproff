@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: center;
 	.pagination__item { //pagination bullet (bulletClass)
-		height: 17px;
-		width: 17px;
-		border: 1px solid $blue;
+		height: 16px;
+		width: 16px;
+		border: 2px solid $blue;
 		display: inline-block;
 		border-radius: 100%;
 
@@ -14,9 +14,9 @@
 	} 
 
 	.pagination__item_active { //pagination bullet active (bulletActiveClass)
-		height: 17px;
-		width: 17px;
-		border: 1px solid $blue;
+		height: 16px;
+		width: 16px;
+		border: 2px solid $blue;
 		position: relative;
 		border-radius: 100%;
 
@@ -33,9 +33,9 @@
 	}
 
 	.pagination__item_current { //pagination current bullet of active slide index (currentClass)
-		height: 17px;
-		width: 17px;
-		border: 1px solid $blue;
+		height: 16px;
+		width: 16px;
+		border: 2px solid $blue;
 		position: relative;
 		border-radius: 100%;
 
