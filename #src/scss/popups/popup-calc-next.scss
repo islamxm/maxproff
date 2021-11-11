@@ -190,6 +190,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			flex-wrap: wrap;
 			input {
 				visibility: hidden;
 				appearance: none;
@@ -284,12 +285,12 @@
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
 	.popup-calc-next {
 
 
 		&__over {
-
+			padding: 0 5px;	
 		}
 
 		&__wr {
@@ -348,11 +349,12 @@
 				margin-bottom: 20px;
 			}
 			&_wr {
-
+				justify-content: flex-start;
 				label {
 					font-size: 16px;
 					line-height: 19px;
 					padding: 9px 12px;
+					margin-bottom: 5px;
 
 					&:not(:last-child) {
 						margin-right: 6px;
@@ -381,6 +383,10 @@
 				width: 100%;
 				padding: 14px 0;
 			}
+		}
+
+		&__link {
+			display: block;
 		}
 	}
 }
