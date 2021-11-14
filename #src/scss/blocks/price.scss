@@ -1,5 +1,5 @@
 .price {
-	padding: 73px 0 69px 0;
+	padding: 48px 0 69px 0;
 	&__inner{
 
 	}
@@ -197,7 +197,7 @@
 @media (max-width: 1200px) {
 
 	.price {
-
+		padding-top: 25px;
 		.pagination {
 			display: flex;
 		}
@@ -208,6 +208,6 @@
 
 	.price {
 
-		padding-top: 225px;
+		padding-top: 125px;
 	}
 }

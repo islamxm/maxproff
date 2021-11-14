@@ -242,7 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			const priceContent = self.querySelector('.price__item_sheet');
 
 
-			self.classList.toggle('dropped');
+			if(e.target.matches('.price__item_bottom_drop')) {
+				self.classList.toggle('dropped')
+			}
 
 			if(self.classList.contains('dropped')) {
 				priceContent.style.height = priceContent.scrollHeight + 'px';
@@ -1199,6 +1201,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		})
 	})
+
+
 
 
 

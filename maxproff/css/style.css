@@ -1634,6 +1634,10 @@ body {
   display: none;
 }
 
+.pt {
+  padding-top: 20px;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1688,7 +1692,7 @@ body {
 }
 
 .header__inner {
-  padding-bottom: 33px;
+  padding-bottom: 0;
 }
 .header__burger {
   display: none;
@@ -2542,7 +2546,7 @@ body {
   }
 }
 .price {
-  padding: 73px 0 69px 0;
+  padding: 48px 0 69px 0;
 }
 .price__content {
   padding-top: 48px;
@@ -2734,6 +2738,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .price {
+    padding-top: 25px;
+  }
   .price .pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2742,7 +2749,7 @@ body {
 }
 @media (max-width: 425px) {
   .price {
-    padding-top: 225px;
+    padding-top: 125px;
   }
 }
 .serv {
@@ -7624,25 +7631,146 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .price-page__content .mainform {
+  .price-page__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-page__inner .feedback {
     display: none;
   }
-  .price-page__content .feedback {
-    display: none;
+  .price-page__inner .mainform {
+    width: 100%;
+  }
+  .price-page__inner .mainform__rep {
+    width: 100%;
+    padding-right: 70px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .price-page__inner .mainform__rooms {
+    width: 100%;
+    padding-right: 70px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .price-page__inner .mainform__est {
+    width: 100%;
+    padding-right: 70px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .price-page__inner .mainform__sq {
+    width: 100%;
+    padding-right: 70px;
+  }
+  .price-page__inner .mainform__sq_wrap input {
+    width: 100%;
+  }
+  .price-page__inner .mainform__send_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-page__inner .mainform__send_tel {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  .price-page__inner .mainform__send .btn {
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .price-page__inner {
+    padding: 0 20px;
+  }
+  .price-page__inner .mainform__title {
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .price-page__inner .mainform__rep {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .price-page__inner .mainform__rooms {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .price-page__inner .mainform__est {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .price-page__inner .mainform__sq {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .price-page__inner .mainform__send {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 475px) {
+  .price-page__inner {
+    padding: 0;
+  }
+  .price-page__inner .mainform__rep {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price-page__inner .mainform__rooms {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price-page__inner .mainform__est {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price-page__inner .mainform__est_item {
+    width: 50%;
+  }
+  .price-page__inner .mainform__est_item:first-child {
+    margin: 0;
+  }
+  .price-page__inner .mainform__sq {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price-page__inner .mainform__total {
+    padding: 18px 15px;
+  }
+  .price-page__inner .mainform__send {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .bad-page {
-  background-image: url("../img/404.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  height: 100vh;
+  height: 70vh;
+  padding: 45px 0;
 }
 .bad-page__inner {
+  margin: 0 auto;
   max-width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .bad-page__title {
-  text-align: left;
+  text-align: center;
   margin-bottom: 46px;
 }
 .bad-page__subtitle {
@@ -7650,11 +7778,13 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 500;
+  text-align: center;
 }
 .bad-page__descr {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
 }
 .bad-page__descr p {
   margin-bottom: 20px;
@@ -7670,6 +7800,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .bad-page {
+    padding: 130px 0;
+  }
   .bad-page__btn {
     display: block;
     text-align: center;
