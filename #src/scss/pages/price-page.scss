@@ -24,28 +24,139 @@
 		}
 
 		.mainform {
+			max-width: 699px;
+			&__title {
+				padding: 0;
+				padding-left: 30px;
+				max-width: 355px;
+				font-size: 20px;
+				line-height: 23px;
+				font-weight: 900;
+
+			}
+
+			&___content {
+
+
+			}
+
+			&__rep {
+				width: 45%;
+				order: 1;
+				padding: 18px 0;
+				margin-left: 30px;
+				border-bottom: 1px solid #f2f2f2;
+			}
+
+			&__rooms {
+				order: 2;
+				margin-right: 38px;
+				padding: 18px 0;
+				width: auto;
+				border-bottom: 1px solid #f2f2f2;
+			}
+
+			&__est {
+				width: 45%;
+				order: 3;
+				margin-left: 30px;
+				padding: 18px 0;
+				padding-bottom: 38px;
+
+				
+				&_item {
+					width: 50%;
+					margin: 0;
+				}
+			}
+
+			&__sq {
+				width: auto;
+				order: 4;
+				padding: 18px 0;
+				padding-right: 55px;
+				margin-right: 73px;
+				padding-left: 0;
+				padding-right: 0;
+
+				&_wrap {
+
+				}
+
+				&_range {
+					width: 198px !important;
+				}
+			}
+
+			&__total {
+				padding: 17px 130px 17px 28px;
+				order: 5;
+			}
+
+			&__send {
+
+				&_wrap {
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				&_tel {
+					width: 311px;
+					padding: 12px 13px;
+				}
+
+				.btn {
+					padding: 15px 40px 15px 30px;
+					display: inline-block ;
+					// max-width: 100%;
+				}
+			}
+		}
+
+		
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.price-page__inner {
+		padding: 0 20px;
+
+		.mainform {
 			width: 100%;
-
-			&__content {
-
+			&__title {
+				margin-bottom: 25px;
+				padding-left: 30px;
+				padding-right: 30px;
 			}
 
 			&__rep {
 				width: 100%;
 				padding-right: 70px;
 				order: 1;
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-left: 0;
+				border: none;
 			}
 
 			&__rooms {
 				width: 100%;
 				padding-right: 70px;
 				order: 3;
+				padding-left: 30px;
+				padding-right: 30px;
+				border: none;
 			}
 
 			&__est {
 				width: 100%;
 				padding-right: 70px;
 				order: 2;
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-left: 0;
 			}
 
 			&__sq {
@@ -53,13 +164,15 @@
 				padding-right: 70px;
 				&_wrap {
 					input {
-						width: 100%;
+						width: 100% !important;
+
 					}
 				}
+				padding-left: 30px;
+				padding-right: 30px;
 			}
 
 			&__send {
-
 				&_wrap {
 					flex-direction: column;
 
@@ -75,44 +188,6 @@
 					padding: 14px 0;
 					text-align: center;
 				}
-			}
-		}
-	}
-}
-
-@media (max-width: 767px) {
-	.price-page__inner {
-		padding: 0 20px;
-
-		.mainform {
-
-			&__title {
-				margin-bottom: 25px;
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-			&__rep {
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-			&__rooms {
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-			&__est {
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-			&__sq {
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-			&__send {
 				padding-left: 30px;
 				padding-right: 30px;
 			}
@@ -156,6 +231,7 @@
 			&__sq {
 				padding-left: 15px;
 				padding-right: 15px;
+				margin: 0;
 			}
 
 			&__total {
@@ -166,6 +242,27 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
+		}
+	}
+}
+
+@media (max-width: 340px) {
+	.price-page__inner {
+
+
+		.mainform {
+
+			&__est {
+				padding-right: 0;
+
+				&_item {
+
+					label {
+						padding-left: 22px;
+					}
+				}
+			}
+
 		}
 	}
 }
