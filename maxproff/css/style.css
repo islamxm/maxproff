@@ -8716,7 +8716,7 @@ body {
   padding: 30px 50px 35px 50px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
 }
 .prod-page__prev .container .feedback__title {
   text-align: center;
@@ -9133,11 +9133,6 @@ body {
     padding: 15px 0;
   }
 }
-@media (max-width: 500px) {
-  .prod-page__content_item .item__body_text {
-    display: none;
-  }
-}
 @media (max-width: 320px) {
   .prod-page__content_list {
     -webkit-box-pack: center;
@@ -9146,9 +9141,6 @@ body {
   }
   .prod-page__content_item {
     width: 100%;
-  }
-  .prod-page__content_item .item__body_text {
-    display: block;
   }
 }
 .legal-page__title {

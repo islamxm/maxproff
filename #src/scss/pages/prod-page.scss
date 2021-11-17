@@ -19,7 +19,7 @@
 				padding: 30px 50px 35px 50px;
 				position: absolute;
 				top: 0;
-				right: 0;
+				right: 20px;
 
 				&__title {
 					text-align: center;
@@ -499,7 +499,7 @@
 				.item__body {
 
 					&_text {
-						display: none;	
+
 					}
 				}
 			}
@@ -523,7 +523,6 @@
 				.item__body {
 
 					&_text {
-						display: block;	
 					}
 				}
 			}
