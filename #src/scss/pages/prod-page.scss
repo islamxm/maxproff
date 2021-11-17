@@ -269,6 +269,7 @@
 
 		&__prev {
 			padding: 37px 0 19px;
+			background-position: left;
 			.container {
 
 				.feedback {
@@ -367,7 +368,7 @@
 		}
 
 		&__prev {
-
+			background-position: left;
 			&_in {
 				max-width: 100%;
 			}
@@ -385,11 +386,11 @@
 		&__content {
 
 			&_list {
-				justify-content: center;
+				justify-content: space-between;
 			}
 
 			&_item {
-				width: 100%;
+				width: 48%;
 
 				.item__body {
 					margin-bottom: 0;
@@ -475,6 +476,54 @@
 						button {
 							padding: 15px 0;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+
+	.prod-page {
+
+		&__content {
+
+			&_list {
+
+			}
+
+
+			&_item {
+
+				.item__body {
+
+					&_text {
+						display: none;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+
+	.prod-page {
+
+		&__content {
+
+			&_list {	
+				justify-content: center;
+			}
+
+
+			&_item {	
+				width: 100%;
+				.item__body {
+
+					&_text {
+						display: block;	
 					}
 				}
 			}
