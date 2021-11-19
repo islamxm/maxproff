@@ -4,6 +4,8 @@
 	padding: 42px 0 71px;
 }
 
+
+
 .price-page__inner {
 	display: flex;
 	justify-content: space-between;
@@ -121,6 +123,12 @@
 
 
 @media (max-width: 767px) {
+	.pricepage {
+
+		.price {
+			padding-top: 125px;
+		}
+	}
 	.price-page__inner {
 		padding: 0 20px;
 
