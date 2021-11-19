@@ -1,3 +1,5 @@
+'use strict';
+
 import Swiper from './libs/swiper.js';
 import { Fancybox, Carousel, Panzoom} from '@fancyapps/ui';
 import mixitup from 'mixitup';
@@ -564,49 +566,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*Prod item page dropdowns*/
 	const prodItems = document.querySelectorAll('.content__info_item');
-	const prodItemHead = document.querySelector('.content__info_item_head');
 
 
+	// function prodItemDropdown() {
+	// 	prodItems.forEach(i => {
+	// 		let head = i.querySelector('.content__info_item_head');
+	// 		if(i.classList.contains('opened-item')) {
+	// 			i.style.height = i.offsetHeight + 'px';
+	// 		} else {
+	// 			i.style.height = 53 + 'px';
+	// 		}
+	// 	});
+	// }
+
+	function test(item) {
+		let head = item.querySelector('.content__info_item_head');
+		let body = item.querySelector('.content__info_item_body');
+		if(item.classList.contains('opened-item') && !item.classList.contains('closed-item')) {
+			item.style.cssText = `height: ${item.scrollHeight}px`;
+			item.classList.remove('closed-item');
+		} 
+		if(item.classList.contains('closed-item') && !item.classList.contains('opened-item')) {
+			item.style.cssText = `height: 53px`;
+		}
+	}
 
 
 	prodItems.forEach(i => {
+		test(i);
+	});
 
+	prodItems.forEach(i => {
+		i.addEventListener('resize', (e) => {
+			test(i);
+		})
+	});
+
+	prodItems.forEach(i => {
 		i.addEventListener('click', (e) => {
-			let target = e.target;
-			let head = i.querySelector('.content__info_item_head');
-
 			i.classList.toggle('opened-item');
-
-			if(i.classList.contains('opened-item')) {
-				i.style.height = i.scrollHeight + 'px';
-			} else {
-				i.style.height = head.offsetHeight + 'px';
-			}
-			// if(!i.classList.contains('opened-item')) {
-			// 	i.style.height = i.scrollHeight + 'px';
-			// 	i.classList.add('opened-item');
-
-			// } else {
-			// 	i.style.height = head.offsetHeight + 'px';
-			// 	i.classList.remove('opened-item');
-			// }
+			i.classList.toggle('closed-item');
+			test(i);
 		});
+
 
 	});
 
 	
 
-	
-
-	// document.addEventListener('resize', (e) => {
-	// 	prodItems.forEach((i, index) => {
-	// 		let head = i.querySelector('.content__info_item_head');
-
-	// 		if(!i.classList.contains('opened-item')) {
-	// 			i.style.height = head.offsetHeight + 'px';
-	// 		} 
-	// 	})
-	// })
 
 
 	/*Prod item page services slider*/
