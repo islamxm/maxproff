@@ -1,5 +1,5 @@
 .legal-page {
-
+	padding-top: 35px;
 	&__inner {
 
 	}
@@ -35,9 +35,15 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	.legal-page {
+		padding-top: 20px;
+	}
+}
+
 @media (max-width: 757px) {
 	.legal-page {
-
+		padding-top: 125px;
 		&__title {
 			font-weight: 700;
 			font-size: 28px;

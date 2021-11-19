@@ -9165,6 +9165,9 @@ body {
     width: 100%;
   }
 }
+.legal-page {
+  padding-top: 35px;
+}
 .legal-page__title {
   margin-bottom: 24px;
 }
@@ -9187,7 +9190,15 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1200px) {
+  .legal-page {
+    padding-top: 20px;
+  }
+}
 @media (max-width: 757px) {
+  .legal-page {
+    padding-top: 125px;
+  }
   .legal-page__title {
     font-weight: 700;
     font-size: 28px;
