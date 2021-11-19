@@ -8391,6 +8391,7 @@ body {
 }
 .article-page {
   padding-bottom: 70px;
+  padding-top: 40px;
 }
 .article-page__content {
   background: #FFFFFF;
@@ -8492,6 +8493,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .article-page {
+    padding-top: 125px;
+  }
   .article-page__text p {
     margin-bottom: 15px;
   }
