@@ -30,7 +30,8 @@
 			&_list {
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: space-between;
+				gap: 10px;
+				// justify-content: space-between;
 			}
 
 			&_item {
@@ -159,13 +160,12 @@
 			&_tabbody {
 
 				&_list {
-
+					justify-content: space-between;
 				}
 
 				&_item {
 					width: 47%;
 					.port-page__item_img {
-						max-height: 154px;
 						height: 100%;
 					}
 					.port-page__item_info {
@@ -214,6 +214,10 @@
 
 				&_item {
 					width: 100%;
+
+					&_img {
+						
+					}
 
 					.port-page__item_info {
 						flex-wrap: nowrap;
