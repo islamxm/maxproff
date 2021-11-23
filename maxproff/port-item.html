@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        <header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__top">
+				<div class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+				<a href="#" class="header__top_logo">
+					<picture>
+						<source type="image/webp" srcset="./img/header-logo@1x.webp 1x, ./img/header-logo@2x.webp 2x">
+						<img src="./img/header-logo@1x.png" alt="MaxProff">
+					</picture>
+				</a>
+				<a href="tel:+72332222222" class="header__mob_btn btn">
+					<img src="./img/mob-tel.svg" alt="Phone">
+				</a>
+				<nav class="header__top_nav">
+					<ul class="header__top_nav_list">
+						<li>
+							<a href="#" class="header__top_nav_item">Цены</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Услуги</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Портфолио</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Акции</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Преимущества</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Блог</a>
+						</li>
+						<li>
+							<a href="#" class="header__top_nav_item">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div class="header__top_contacts">
+					<a href="tel:+72332222222" class="header__top_contacts_tel">+7 (233) 222-22-22</a>
+					<div class="header__top_contacts_time">08:00 - 22:00, без выходных</div>
+				</div>
+				<div class="header__top_social">
+					<a href="#" class="header__top_social_item">
+						<img src="./img/viber.svg" alt="viber">
+					</a>
+					<a href="#" class="header__top_social_item">
+						<img src="./img/whatsapp.png" alt="whatsapp">
+					</a>
+					<a href="#" class="header__top_social_item">
+						<img src="./img/telegram.svg" alt="telegram">
+					</a>
+				</div>
+				<button data-micromodal-trigger="popupFeed" class="header__top_btn btn-transparent">Заказать звонок</button>
+			</div>
+			<nav class="header__top_nav_mob">
+				<ul class="header__top_nav_list_mob">
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Цены</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Услуги</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Портфолио</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Акции</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Преимущества</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Блог</a>
+					</li>
+					<li>
+						<a href="#" class="header__top_nav_item_mob">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__bottom">
+				<ul class="header__bottom_list">
+					<li>
+						<a href="#" class="header__bottom_item header__bottom_item_drop">Ремонт квартир</a>
+						<ul class="header__bottom_item_menu">
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Черновой</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Косметический</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Капитальный</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Элитный</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">В новостройках</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Студии</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Вторичное жилье</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="header__bottom_item header__bottom_item_drop">Дизайн интерьера</a>
+						<ul class="header__bottom_item_menu">
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн кухни</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн спальни</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн гостинной</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн детской</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн санузла</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн коридора</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Дизайн балкона</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="header__bottom_item header__bottom_item_drop">Ремонт комнат</a>
+						<ul class="header__bottom_item_menu">
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Кухни</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Спальни</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Гостинная</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Детские</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Санузлы</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Коридоры</a>
+							</li>
+							<li>
+								<a href="#" class="header__bottom_item_menu-item">Балконы</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="header__bottom_item">Дома и коттеджи</a>
+					</li>
+					<li>
+						<a href="#" class="header__bottom_item">Прочие услуги</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+        <main class="main">
+            <div class="port-item">
+                <div class="container">
+                    <div class="port-item__inner">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+	<div class="consult">
+    <div class="container">
+        <div class="consult__inner">
+            <div class="consult__descr">
+                <div class="consult__ques">
+                    Нужна консультация?
+                </div>
+                <div class="consult__text">
+                    <p>
+                        Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и подготовим индивидуальное предложение!
+                    </p>
+                </div>
+            </div>
+        
+            <button data-micromodal-trigger="popupFeed" class="consult__btn">Оставить заявку</button>
+        </div>
+    </div>
+</div>
+	<div class="footer__top">
+		<div class="container">
+			<div class="footer__top_content">
+
+
+				<div class="footer__top_max">
+					<a href="#" class="footer__top_max_logo">
+						<picture>
+							<source type="image/webp" srcset="./img/footer-logo@1x.webp 1x, ./img/footer-logo@2x.webp 2x">
+							<img src="./img/footer-logo@1x.png" alt="MaxProff">
+						</picture>
+					</a>
+					<div class="footer__top_max_pay">
+						<div class="footer__top_max_pay_title">
+							Любая форма оплаты
+						</div>
+						<div class="footer__top_max_pay_list">
+							<div class="footer__top_max_pay_item">
+								<img src="./img/pay1.svg" alt="Wallet">
+							</div>
+							<div class="footer__top_max_pay_item">
+								<img src="./img/pay2.png" alt="SberPay">
+							</div>
+							<div class="footer__top_max_pay_item">
+								<img src="./img/pay3.png" alt="Visa">
+							</div>
+							<div class="footer__top_max_pay_item">
+								<img src="./img/pay4.png" alt="AlfaBank">
+							</div>
+							<div class="footer__top_max_pay_item">
+								<img src="./img/pay5.png" alt="MasterCard">
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__soc">
+						<a href="#" class="footer__soc_item">
+							<img src="./img/facebook.png" alt="facebook">
+						</a>
+
+						<a href="#" class="footer__soc_item">
+							<img src="./img/youtube.png" alt="youtube">
+						</a>
+
+						<a href="#" class="footer__soc_item">
+							<img src="./img/insta.png" alt="instagram">
+						</a>
+						<a href="#" class="footer__soc_item">
+							<img src="./img/telegram.png" alt="telegram">
+						</a>
+						<a href="#" class="footer__soc_item">
+							<img src="./img/vk.png" alt="vk">
+						</a>
+						<a href="#" class="footer__soc_item">
+							<img src="./img/odnoklassniki.png" alt="odnoklassniki">
+						</a>
+					</div>
+					
+				</div>	
+
+
+				<div class="footer__top_serv">
+					<h3 class="footer__top_serv_title">Наши услуги</h3>
+					<ul class="footer__top_serv_list">
+						<li>
+							<a href="#" class="footer__top_serv_item">Квартиры</a>
+						</li>
+						<li>
+							<a href="#" class="footer__top_serv_item">Коттеджи</a>
+						</li>
+						<li>
+							<a href="#" class="footer__top_serv_item">Таунхаусы</a>
+						</li>
+						<li>
+							<a href="#" class="footer__top_serv_item">Офисы</a>
+						</li>
+						<li>
+							<a href="#" class="footer__top_serv_item">Инженерные системы</a>
+						</li>
+						<li>
+							<a href="#" class="footer__top_serv_item">География работ</a>
+						</li>
+					</ul>
+				</div>	
+
+
+				<ul class="footer__top_nav">
+					<li>
+						<a href="#" class="footer__top_nav_item">Портфолио</a>
+					</li>
+					<li>
+						<a href="#" class="footer__top_nav_item">Стоимость</a>
+					</li>
+					<li>
+						<a href="#" class="footer__top_nav_item">Акции</a>
+					</li>
+					<li>
+						<a href="#" class="footer__top_nav_item">О компании</a>
+					</li>
+					<li>
+						<a href="#" class="footer__top_nav_item">Статьи</a>
+					</li>
+					<li>
+						<a href="#" class="footer__top_nav_item">Контакты</a>
+					</li>
+				</ul>
+
+
+				<div class="footer__top_contacts">
+					<a href="tel:+72332222222" class="footer__top_contacts_tel">+7 (233) 222-22-22</a>
+					<div class="footer__top_contacts_time">08:00 - 22:00, без выходных</div>
+					<a href="#" class="footer__top_contacts_order">Заказать звонок</a>
+					<a href="mailto:" class="footer__top_contacts_mail">Электронная почта @</a>
+					<div class="footer__top_contacts_adr">Адрес</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__bottom_content">
+
+
+				<div class="footer__bottom_copy">
+					с  2021 «MaxProff» <a href="#">Правовая информация</a>
+				</div>
+
+
+				<div class="footer__soc">
+					<a href="#" class="footer__soc_item">
+						<img src="./img/facebook.png" alt="facebook">
+					</a>
+
+					<a href="#" class="footer__soc_item">
+						<img src="./img/youtube.png" alt="youtube">
+					</a>
+
+					<a href="#" class="footer__soc_item">
+						<img src="./img/insta.png" alt="instagram">
+					</a>
+					<a href="#" class="footer__soc_item">
+						<img src="./img/telegram.png" alt="telegram">
+					</a>
+					<a href="#" class="footer__soc_item">
+						<img src="./img/vk.png" alt="vk">
+					</a>
+					<a href="#" class="footer__soc_item">
+						<img src="./img/odnoklassniki.png" alt="odnoklassniki">
+					</a>
+				</div>
+
+
+				<div class="footer__bottom_oferta">
+					Сайт не является публичной офертой и носит информационный характер
+				</div>
+				<a href="#" class="footer__bottom_map">
+					Карта сайта
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+        <div class="header__burger_menu">
+	<div class="header__burger_in">
+		<button class="header__burger_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="header__burger_in_btns">
+			<button data-micromodal-trigger="popupFeed" class="call_btn btn">Заказать звонок</button>
+			<button data-micromodal-trigger="popupCalcNext" class="calc_btn btn-transparent">Калькулятор ремонта</button>
+		</div>
+
+		<ul class="main__menu_list">
+			<li class="main__menu_item main__menu_item_ar">
+				<a class="main__menu_item_ar_link" href="#">
+					Ремонт квартир
+				</a>
+				<ul class="main__submenu">
+					<li>
+						<a href="#" class="menu__submenu_item">Черновой</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Косметический</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Капитальный</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Элитный</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">В новостройках</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Студии</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Вторичное жилье</a>
+					</li>
+				</ul>
+			</li>
+			<li class="main__menu_item main__menu_item_ar">
+				<a class="main__menu_item_ar_link" href="#">
+					Дизайн интерьера
+				</a>
+				<ul class="main__submenu">
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн кухни</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн спальни</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн гостинной</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн детской</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн санузла</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн коридора</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Дизайн балкона</a>
+					</li>
+				</ul>
+			</li>
+			<li class="main__menu_item main__menu_item_ar">
+				<a class="main__menu_item_ar_link" href="#">
+					Ремонт комнат
+				</a>
+				<ul class="main__submenu">
+					<li>
+						<a href="#" class="menu__submenu_item">Кухни</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Спальни</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Гостинная</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Детские</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Снаузлы</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Коридоры</a>
+					</li>
+					<li>
+						<a href="#" class="menu__submenu_item">Балконы</a>
+					</li>
+				</ul>
+
+			</li>
+			<li class="main__menu_item">
+				<a href="#">
+					Дома и коттеджи
+				</a>
+			</li>
+			<li class="main__menu_item">
+				<a href="#">
+					Прочие услуги
+				</a>
+			</li>
+		</ul>
+		<ul class="menu__list">
+			<li class="menu__item menu__item_active">
+				<a href="#">Цены</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">Портфолио</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">Акции</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">
+					Преимущества
+				</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">
+					Блог
+				</a>
+			</li>
+			<li class="menu__item">
+				<a href="#">
+					Контакты
+				</a>
+			</li>
+		</ul>
+		<div class="menu__tel">
+			<a href="tel:+72332222222">+7 (233) 222-22-22</a>
+			<div>08:00 - 22:00, без выходных</div>
+		</div>
+	</div>
+</div>
+
+        <!-- POPUPS -->
+        <div class="popup-feed" id="popupFeed" aria-hidden="true">
+
+
+  <div class="popup-feed__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-feed__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-feed__body" id="modal-1-content">
+        <h2 class="popup-feed__body_title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+        <div class="popup-feed__body_subtitle">
+          Рассчитаем примерную стоимость ремонта и дадим <span>скидку 10%</span> на весь заказ
+        </div>
+        <form class="popup-feed__body_form">
+          <div class="popup-feed__body_name">
+            <label for="modal-feed-name">Введите ваше имя</label>
+            <input id="modal-feed-name" type="text">
+          </div>
+          <div class="popup-feed__body_tel">
+            <label for="modal-feed-tel">Введите номер телефона</label>
+            <input id="modal-feed-tel" type="number" placeholder="+7">
+          </div>
+          <button class="btn" type="submit">Оставить заявку</button>
+          <div class="popup-feed__body_link">
+            Я даю свое согласие на <a href="#">обработку персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-calc-next" id="popupCalcNext" aria-hidden="true">
+
+
+  <div class="popup-calc-next__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-calc-next__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-calc-next__body" id="modal-3-content">
+        <div class="popup-calc-next__top-text">Вы даже не рассчитаете стоимость ремонта?</div>
+        <h2 class="popup-calc-next__title">ЦЕНА НА СЛЕДУЮЩЕМ ЭКРАНЕ</h2>
+        <h3 class="popup-calc-next__ask">КАКОЙ РЕМОНТ ВАМ НУЖЕН?</h3>
+        <form class="popup-calc-next__form">
+          
+          <div class="popup-calc-next__sq">
+            <label for="calcRange">Площадь, м2</label>
+            <div class="popup-calc-next__sq_wrap">
+              <input class="popup-calc-next__sq_range calc-next-range" type="range" min="0" max="250" value="0" step="1" id="calcRange">
+              <div class="popup-calc-next__sq_block calc-next-range-block">0</div>
+            </div>
+          </div>
+          <div class="popup-calc-next__type">
+            <div class="popup-calc-next__type_name">Вид ремонта</div>
+            <div class="popup-calc-next__type_wr">
+              <input type="radio" id="capitaL" name="type_of_rep">
+              <label for="capitaL">Капитальный</label>
+              <input type="radio" id="cosmetiC" name="type_of_rep">
+              <label for="cosmetiC">Косметиеский</label>
+              <input type="radio" id="fulL" name="type_of_rep">
+              <label for="fulL">Под ключ</label>
+            </div>   
+          </div>
+          <div class="popup-calc-next__bottom">
+            <div class="popup-calc-next__bottom_tel">
+              <label for="modalTel">Введите номер телефона</label>
+              <input id="modalTel" type="number" placeholder="+7">
+            </div>
+            <button class="btn" type="submit">Расчитать</button>
+          </div>
+
+          <div class="popup-calc-next__link">
+            Я даю свое согласие на <a href="#">обработку персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-calc-feed" id="popupCalcFeed" aria-hidden="true">
+
+
+  <div class="popup-calc-feed__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-calc-feed__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-calc-feed__body" id="modal-4-content">
+        <h2 class="popup-calc-feed__body_title">ОТПРАВЬТЕ ЗАЯВКУ НА РАСЧЁТ</h2>
+        <ul class="popup-calc-feed__body_list">
+          <li class="popup-calc-feed__body_item">Уборка квартиры за наш счет</li>
+          <li class="popup-calc-feed__body_item">Гарантия 3 года на ремонт</li>
+          <li class="popup-calc-feed__body_item">Материалы по цене производителя</li>
+        </ul>
+        <form class="popup-calc-feed__body_form">
+          
+          <div class="popup-calc-feed__body_name">
+            <label>Введите ваше имя
+              <input type="text">
+            </label>
+            
+          </div>
+          <div class="popup-calc-feed__body_tel">
+            <label>Введите номер телефона
+              <input type="number" placeholder="+7">
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Оставить заявку</button>
+          <div class="popup-calc-feed__body_link">
+            Я даю свое согласие на <a href="#">обработку персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-error" id="popupError" aria-hidden="true">
+
+
+  <div class="popup-error__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-error__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/white-close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-error__body" id="modal-2-content">
+        <h2 class="popup-error__body_title">
+          К СОЖАЛЕНИЮ, НАШИ СПЕЦИАЛИСТЫ СМОГУТ ВАМ ПЕРЕЗВОНИТЬ ТОЛЬКО В РАБОЧЕЕ ВРЕМЯ С 8.00 ДО 22.00
+        </h2>
+        <div class="popup-error__body_subtitle">
+          В какое время вам удобно пообщаться?
+        </div>
+        <form class="popup-error__body_form">
+          <div class="popup-error__body_form_item">
+            <input type="radio" id="firstVar" name="time">
+            <label for="firstVar">Утром с 8.00 до 10.00</label>
+          </div>
+          <div class="popup-error__body_form_item">
+            <input type="radio" id="secondVar" name="time">
+            <label for="secondVar">Утром с 10.00 до 13.00</label>
+          </div>
+          <div class="popup-error__body_form_item">
+            <input type="radio" id="thirdVar" name="time">
+            <label for="thirdVar">Утром с 13.00 до 17.00</label>
+          </div>
+          <div class="popup-error__body_form_item">
+            <input type="radio" id="fourthVar" name="time">
+            <label for="fourthVar">Утром с 17.00 до 21.00</label>
+          </div>
+          <button class="btn" type="submit">Жду звонка</button>
+        </form>
+        <div class="popup-error__body_link">
+          Я даю свое согласие на <a href="#">обработку персональных данных</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <div class="popup-answer" id="popupAnswer" aria-hidden="true">
+
+
+  <div class="popup-answer__over" tabindex="-1" data-micromodal-close>
+
+
+    <div class="popup-answer__wr" role="dialog" aria-modal="true">      
+      <button class="close-btn" aria-label="Close modal">
+        <img src="./img/close.svg" alt="close" data-micromodal-close>
+      </button>
+
+      <div class="popup-answer__body" id="modal-5-content">
+        <h2 class="popup-answer__body_title">
+          <span>Благодарим Вас за ответы на вопросы!</span> <br>
+          Вы сэкономили нашему прорабу-сметчику примерно 50 минут рабочего времени.
+        </h2>
+        <div class="popup-answer__body_subtitle">
+          За это, помимо скидки, мы хотим отблагодарить Вас ценным подарком!
+        </div>
+        <form class="popup-answer__body_form">
+          <label>Введите ваше имя
+            <input type="text">
+          </label>
+          <label>Введите номер телефона
+            <input type="number" placeholder="+7">
+          </label>
+          <button class="btn" type="submit">Рассчитать</button>
+        </form>
+        <div class="popup-answer__body_link">
+          Я даю свое согласие на <a href="#">обработку персональных данных</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+        <script src="./js/bundle.js"></script>
+    </body>
+</html>
