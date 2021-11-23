@@ -99,43 +99,35 @@
 			justify-content: space-between;
 			margin-bottom: 33px;
 			&_item {
-				position: relative;
-				padding-left: 27px;
-				display: block;
 				font-weight: 500;
 				font-size: 15px;
 				line-height: 18px;
-				text-decoration: underline;
-				&:after {
-					position: absolute;
-					left: 0;
-					top: 0;
+				padding: 10px 5px;
+				border-radius: 5px;
 
+				display: flex;
+				align-items: center;
+
+				color: #fff;
+
+				img {
+					width: 20px;
+					height: 20px;
+					margin-right: 5px;
 				}
+
 			}
 
 			.whatsapp {
-				color: $green;
-
-				&:after {
-					content: url('../img/mes-whatsapp.png');
-				}
+				background-color: #4CAF50;
 			}
 
-			.telegram {
-				color: #2B6BA0;
-				&:after {
-					content: url('../img/mes-telegram.svg');
-				}
-				
+			.telegram {				
+				background-color: #458CBE;
 			}
 
 			.viber {
-				color: #5C4CBB;
-				&:after {
-					content: url('../img/mes-viber.svg');
-				}
-				
+				background-color: #665CAC;				
 			}
 		}
 

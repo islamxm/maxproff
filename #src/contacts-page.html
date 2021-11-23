@@ -18,8 +18,8 @@
                 <div class="container">
                     <div class="contacts-page__inner">
                         <h1 class="contacts-page__title section-title">Контакты</h1>
-                    </div>
-                    <div class="contacts-page__content">
+
+                        <div class="contacts-page__content">
 
 
                         <div class="contacts-page__soc">
@@ -99,21 +99,30 @@
                             </div>
                             <div class="contacts-page__mes_list">
                                 <a href="#" class="contacts-page__mes_item mail">электронная почта@</a>
-                                <a href="#" class="contacts-page__mes_item telegram">Написать в Тelegram</a>
-                                <a href="#" class="contacts-page__mes_item viber">Написать в Viber </a>
-                                <a href="#" class="contacts-page__mes_item whatsapp">Написать в WhatsApp</a>
+                                <a href="#" class="contacts-page__mes_item telegram"><img src="./img/telegram-b.png" alt="telegram">Написать в Тelegram</a>
+                                <a href="#" class="contacts-page__mes_item viber"><img src="./img/viber-b.png" alt="viber">Написать в Viber </a>
+                                <a href="#" class="contacts-page__mes_item whatsapp"><img src="./img/whatsapp-b.png" alt="whatsapo">Написать в WhatsApp</a>
                             </div>
                         </div>
 
                         @@include('./blocks/feedback.html')
 
                     </div>
+                    </div>
+                    
                 </div>
             </div>
             <!-- @@include('./blocks/consult.html') -->
         </main>
         @@include('./blocks/footer.html')
         @@include('./blocks/header-burger-menu.html')
+
+        <!-- POPUPS -->
+        @@include('./blocks/popup-feed.html')
+        @@include('./blocks/popup-calc-next.html')
+        @@include('./blocks/popup-calc-feed.html')
+        @@include('./blocks/popup-error.html')
+        @@include('./blocks/popup-answer.html')
         <script src="./js/bundle.js"></script>
     </body>
 </html>

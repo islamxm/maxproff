@@ -7929,6 +7929,7 @@ body {
 }
 .contacts-page {
   padding-bottom: 76px;
+  padding-top: 40px;
 }
 .contacts-page__title {
   margin-bottom: 44px;
@@ -7943,7 +7944,7 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-height: 400px;
+  max-height: 500px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   gap: 15px;
@@ -8091,55 +8092,83 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contacts-page__mes_item {
-  width: 50%;
-  padding-left: 30px;
-  position: relative;
+  width: 48%;
   margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
 }
-.contacts-page__mes_item:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.contacts-page__mes .mail:hover {
-  text-decoration: underline;
+.contacts-page__mes .mail {
+  padding-left: 35px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #6CAC3D;
+  border-radius: 5px;
 }
 .contacts-page__mes .mail:after {
   content: url("../img/mes-mail.svg");
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
 }
 .contacts-page__mes .telegram {
-  color: #2B6BA0;
+  color: #fff;
+  background-color: #458CBE;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #458CBE;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.contacts-page__mes .telegram:hover {
-  text-decoration: underline;
-}
-.contacts-page__mes .telegram:after {
-  content: url("../img/mes-telegram.svg");
+.contacts-page__mes .telegram img {
+  width: 20px;
+  height: 20px;
 }
 .contacts-page__mes .viber {
-  color: #6CAC3D;
+  color: #fff;
+  background-color: #665CAC;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #665CAC;
 }
-.contacts-page__mes .viber:hover {
-  text-decoration: underline;
-}
-.contacts-page__mes .viber:after {
-  content: url("../img/mes-viber.svg");
+.contacts-page__mes .viber img {
+  width: 25px;
+  height: 25px;
 }
 .contacts-page__mes .whatsapp {
-  color: #5C4CBB;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #4CAF50;
 }
-.contacts-page__mes .whatsapp:hover {
-  text-decoration: underline;
-}
-.contacts-page__mes .whatsapp:after {
-  content: url("../img/mes-whatsapp.png");
+.contacts-page__mes .whatsapp img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 1200px) {
+  .contacts-page {
+    padding-top: 30px;
+  }
   .contacts-page__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .contacts-page__content {
     -webkit-box-orient: horizontal;
@@ -8149,7 +8178,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-height: 679px;
+    max-height: 725px;
   }
   .contacts-page__content .feedback {
     max-width: 363px;
@@ -8196,20 +8225,45 @@ body {
             order: 6;
     padding-right: 15px;
     padding-left: 15px;
+    padding: 0;
   }
   .contacts-page__mes_list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .contacts-page__mes_item {
     width: unset;
+    font-size: 13px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contacts-page__mes .mail {
     padding-left: 25px;
+  }
+  .contacts-page__mes .mail:after {
+    left: 5px;
+  }
+  .contacts-page__mes .viber {
+    padding: 5px 7px;
+  }
+  .contacts-page__mes .telegram {
+    padding: 5px 7px;
+  }
+  .contacts-page__mes .whatsapp {
+    padding: 5px 7px;
+  }
+  .contacts-page__mes .whatsapp img {
+    margin-right: 4px;
   }
 }
 @media (max-width: 767px) {
   .contacts-page {
     padding-bottom: 20px;
+    padding-top: 100px;
   }
   .contacts-page__content {
     max-height: unset;
@@ -8263,6 +8317,17 @@ body {
             order: 2;
     max-width: unset;
     width: 100%;
+  }
+  .contacts-page__mes_list {
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contacts-page__mes_item {
+    margin-bottom: 0;
   }
 }
 .blog-page {
@@ -8814,36 +8879,32 @@ body {
   margin-bottom: 33px;
 }
 .prod-page__prev_soc_item {
-  position: relative;
-  padding-left: 27px;
-  display: block;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  text-decoration: underline;
+  padding: 10px 5px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
 }
-.prod-page__prev_soc_item:after {
-  position: absolute;
-  left: 0;
-  top: 0;
+.prod-page__prev_soc_item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 .prod-page__prev_soc .whatsapp {
-  color: #6CAC3D;
-}
-.prod-page__prev_soc .whatsapp:after {
-  content: url("../img/mes-whatsapp.png");
+  background-color: #4CAF50;
 }
 .prod-page__prev_soc .telegram {
-  color: #2B6BA0;
-}
-.prod-page__prev_soc .telegram:after {
-  content: url("../img/mes-telegram.svg");
+  background-color: #458CBE;
 }
 .prod-page__prev_soc .viber {
-  color: #5C4CBB;
-}
-.prod-page__prev_soc .viber:after {
-  content: url("../img/mes-viber.svg");
+  background-color: #665CAC;
 }
 .prod-page__prev_btns {
   display: -webkit-box;
@@ -9265,20 +9326,39 @@ body {
 }
 .prod-item__prev_content .content__descr_img {
   width: 100%;
-  height: 351px;
+  height: 450px;
   background-color: #ccc;
   border-radius: 2px;
   overflow: hidden;
   margin-bottom: 26px;
+  border-radius: 10px;
+  position: relative;
+}
+.prod-item__prev_content .content__descr_img .content__descr_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px;
+}
+.prod-item__prev_content .content__descr_img .content__descr_text_in {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.prod-item__prev_content .content__descr_img .content__descr_text_in p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
 }
 .prod-item__prev_content .content__descr_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover !important;
      object-fit: cover !important;
-}
-.prod-item__prev_content .content__descr_text {
-  margin-bottom: 50px;
 }
 .prod-item__prev_content .content__descr_btn {
   margin-bottom: 8px;
@@ -9294,6 +9374,8 @@ body {
 }
 .prod-item__prev_content .content__info {
   width: 35%;
+}
+.prod-item__prev_content .content__info_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9301,6 +9383,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding-bottom: 40px;
 }
 .prod-item__prev_content .content__info_btn a {
   display: block;
@@ -9695,6 +9782,10 @@ body {
   .prod-item__prev_content .content__descr {
     width: 100%;
   }
+  .prod-item__prev_content .content__descr_text_in p {
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
   .prod-item__prev_content .content__descr_btn a {
     padding: 12px 0;
     text-align: center;
@@ -9714,6 +9805,9 @@ body {
   }
   .prod-item__prev_content .content__info {
     width: 100%;
+  }
+  .prod-item__prev_content .content__info__inner {
+    margin-bottom: 0;
   }
   .prod-item__feed .feedback {
     display: none;
@@ -9776,6 +9870,9 @@ body {
   .prod-item__prev_content .content__descr_btn a {
     width: 100%;
     text-align: center;
+  }
+  .prod-item__prev_content .content__descr_img {
+    max-height: 300px;
   }
   .prod-item__prev_content .mob__wrap {
     -ms-flex-wrap: wrap;
