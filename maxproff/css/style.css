@@ -9134,6 +9134,18 @@ body {
   .prod-page__prev_btns a {
     width: 100%;
   }
+  .prod-page__prev_soc {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prod-page__prev_soc_item {
+    width: 50%;
+    margin-bottom: 5px;
+  }
   .prod-page__content_list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -9217,6 +9229,11 @@ body {
   }
   .prod-page__bottom .mainform__send_wrap button {
     padding: 15px 0;
+  }
+}
+@media (max-width: 500px) {
+  .prod-page__prev_soc_item {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {

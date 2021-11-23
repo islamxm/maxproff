@@ -289,6 +289,8 @@
 				}
 
 			}
+
+
 		}
 
 		&__content {
@@ -372,6 +374,16 @@
 
 				a {
 					width: 100%;
+				}
+			}
+
+			&_soc {
+				flex-wrap: wrap;
+				flex-direction: column;
+				// justify-content: flex-start;
+				&_item {
+					width: 50%;
+					margin-bottom: 5px;
 				}
 			}
 		}
@@ -479,7 +491,15 @@
 @media (max-width: 500px) {
 
 	.prod-page {
+		&__prev {
 
+			&_soc {
+
+				&_item {
+					width: 100%;
+				}
+			}
+		}
 		&__content {
 
 			&_list {
