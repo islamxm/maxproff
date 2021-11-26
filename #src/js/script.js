@@ -1241,9 +1241,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+	/*Portfolio one item*/
 	
+	const portItem = document.querySelector('.port-item__gallery_content');
+	const portItemDescr = document.querySelector('.port-item__gallery_info');
+
+	if(portItem) {
+		portItemDescr.style.width = `${portItem.offsetWidth}px`;
+	}
+	
+	window.addEventListener('resize', () => {
+		if(portItem) {
+			portItemDescr.style.width = `${portItem.offsetWidth}px`;
+		}
+	})
+
+	const portItemTabs = document.querySelectorAll('.port-item__gallery_tab');
+	const portItemContent = document.querySelectorAll('.port-item__gallery_content_item');
+	const portItemTabsParent = document.querySelector('.port-item__gallery_tabs');
+
+	function hidePortItemTabContet() {
+		portItemContent.forEach(i => {
+			i.style.display = 'none';
+		});
+
+		portItemTabs. forEach(i => {
+			i.classList.remove('port-item__gallery_tab_active');
+		});
+	}
 
 
+	function showPortItemTabContent(i = 0) {
+		portItemContent[i].style.display = 'flex';
+		portItemTabs[i].classList.add('port-item__gallery_tab_active');
+	}
+
+
+	hidePortItemTabContet();
+	showPortItemTabContent();
+
+	portItemTabsParent.addEventListener('click', (e) => {
+		const tar = e.target;
+		console.log(tar);
+		const tab = tar.parentNode;
+		console.log(tab);
+		if(tab && tab.classList.contains('port-item__gallery_tab')) {
+			portItemTabs.forEach((i, index) => {
+				if(tab == i) {
+					hidePortItemTabContet();
+					showPortItemTabContent(index);
+				}
+			})
+		}
+	})
 
 
 
