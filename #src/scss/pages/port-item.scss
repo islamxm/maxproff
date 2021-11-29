@@ -322,6 +322,15 @@
 	}
 }
 
+
+@media (max-width: 768px) {
+	.port-item {
+		padding-top: 120px;
+		&__inner {
+
+		}
+	}
+}
 @media (max-width: 620px) {
 	.port-item {
 
