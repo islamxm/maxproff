@@ -10559,9 +10559,6 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10000000;
-  visibility: visible;
-  opacity: 1;
 }
 .popup-calc-next__over {
   width: 100%;
@@ -11151,6 +11148,9 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10000000;
+  visibility: visible;
+  opacity: 1;
 }
 .popup-error__over {
   width: 100%;
@@ -11272,6 +11272,14 @@ body {
   }
   .popup-error__body .btn {
     margin-bottom: 29px;
+  }
+}
+@media (max-width: 321px) {
+  .popup-error__wr {
+    padding: 35px 10px 15px 10px;
+  }
+  .popup-error__body_form .btn {
+    margin-bottom: 10px;
   }
 }
 .popup-answer.is-open {
