@@ -10559,6 +10559,9 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10000000;
+  visibility: visible;
+  opacity: 1;
 }
 .popup-calc-next__over {
   width: 100%;
@@ -10927,6 +10930,41 @@ body {
     display: block;
   }
 }
+@media (max-width: 375px) {
+  .popup-calc-next__wr {
+    padding: 35px 10px 15px 10px;
+  }
+  .popup-calc-next__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .popup-calc-next__wr {
+    padding-top: 20px;
+  }
+  .popup-calc-next__wr .close-btn {
+    top: 3px;
+  }
+  .popup-calc-next__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .popup-calc-next__ask {
+    margin-bottom: 15px;
+  }
+  .popup-calc-next__type {
+    margin-bottom: 15px;
+  }
+  .popup-calc-next__sq {
+    margin-bottom: 15px;
+  }
+  .popup-calc-next__bottom {
+    margin-bottom: 10px;
+  }
+  .popup-calc-next__bottom_tel {
+    margin-bottom: 10px;
+  }
+}
 .popup-calc-feed.is-open {
   z-index: 10000000;
   visibility: visible;
@@ -10946,9 +10984,6 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10000000;
-  visibility: visible;
-  opacity: 1;
 }
 .popup-calc-feed__over {
   width: 100%;
