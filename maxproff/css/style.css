@@ -10443,6 +10443,9 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10000000;
+  visibility: visible;
+  opacity: 1;
 }
 .popup-feed .popup-feed__wr {
   background-color: #fff;
@@ -11148,9 +11151,6 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10000000;
-  visibility: visible;
-  opacity: 1;
 }
 .popup-error__over {
   width: 100%;
