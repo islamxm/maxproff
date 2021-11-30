@@ -1278,10 +1278,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
-	hidePortItemTabContet();
-	showPortItemTabContent();
+	if(portItemContent == true) {
+		hidePortItemTabContet();
+	}
 
-	portItemTabsParent.addEventListener('click', (e) => {
+	if(portItemContent == true) {
+		showPortItemTabContent(0);
+	}
+
+
+	if(portItemContent == true) {
+		portItemTabsParent.addEventListener('click', (e) => {
 		const tar = e.target;
 		console.log(tar);
 		const tab = tar.parentNode;
@@ -1295,6 +1302,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
+	}	
+	
 
 
 

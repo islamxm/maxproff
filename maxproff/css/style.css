@@ -11346,7 +11346,7 @@ body {
   }
 }
 @media (max-width: 322px) {
-  .popup-answer_wr {
+  .popup-answer__wr {
     padding: 35px 10px 15px 10px;
   }
   .popup-answer__body_subtitle {
