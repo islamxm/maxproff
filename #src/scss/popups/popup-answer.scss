@@ -136,3 +136,15 @@
 		}
 	}
 }
+
+@media (max-width: 322px) {
+	.popup-answer {
+
+		&__body {
+
+			&_subtitle {
+				margin-bottom: 20px;
+			}
+		}
+	} 
+}

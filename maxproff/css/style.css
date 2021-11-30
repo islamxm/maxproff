@@ -11345,6 +11345,11 @@ body {
     padding: 59px 10px 52px 10px;
   }
 }
+@media (max-width: 322px) {
+  .popup-answer__body_subtitle {
+    margin-bottom: 20px;
+  }
+}
 .ad-popup {
   padding: 7px 6px;
   background: #6CAC3D;
