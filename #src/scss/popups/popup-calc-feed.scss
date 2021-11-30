@@ -14,6 +14,9 @@
 	height: 100%;
 	transition: all .3s ease;
 	background-color: rgba(0,0,0, .3);
+	z-index: 10000000;
+	visibility: visible;
+	opacity: 1;
 
 
 	
@@ -211,4 +214,19 @@
 		}
 	}
 
+}
+
+@media (max-width: 320px) {
+	.popup-calc-feed {
+		&__wr {
+			padding: 35px 10px 15px 10px;
+		}
+
+		&__body {
+
+			&_title {
+				margin-bottom: 20px;
+			}
+		}
+	} 
 }
