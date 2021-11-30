@@ -11346,6 +11346,9 @@ body {
   }
 }
 @media (max-width: 322px) {
+  .popup-answer_wr {
+    padding: 35px 10px 15px 10px;
+  }
   .popup-answer__body_subtitle {
     margin-bottom: 20px;
   }
