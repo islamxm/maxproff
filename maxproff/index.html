@@ -3387,38 +3387,147 @@
   </div>
 </div>
         <div class="popup-quiz1" id="popupQuiz1" aria-hidden="true">
-1
+    <div class="popup-quiz1__over" tabindex="-1" data-micromodal-close>
+        <div class="popup-quiz1__wr" role="dialog" aria-modal="true">
+            <button class="close-btn" aria-label="Close modal">
+            <img src="./img/close.svg" alt="close" data-micromodal-close>
+            </button>
+            <div class="popup-quiz1__body" id="modal-6-content">
+                <div class="quiz__content">
+                    <h2 class="quiz__title"> В каком доме находится квартира?</h2>
+                    <form class="quiz__content_form">
+                        <div class="form__select">
+                            <div class="form__select_img">
+                                <picture>
+                                    <source type="image/webp" srcset="">
+                                    <img src="" alt="">
+                                </picture>
+                            </div>
+                            <input id="secdr" type="radio" name="location">
+                            <label for="secdr">Вторичное жилье</label>
+                        </div>
+                        <div class="form__select">
+                            <div class="form__select_img">
+                                <picture>
+                                    <source type="image/webp" srcset="">
+                                    <img src="" alt="">
+                                </picture>
+                            </div>
+                            <input id="new" type="radio" name="location">
+                            <label for="new">Новостройка</label>
+                        </div>
+                    </form>
 
-  <div class="popup-quiz1__over" tabindex="-1" data-micromodal-close>
+                    <div class="quiz__pag">
+                        <div class="pag checked"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                    </div>
 
-
-    <div class="popup-quiz1__wr" role="dialog" aria-modal="true">      
-      <button class="close-btn" aria-label="Close modal">
-        <img src="./img/close.svg" alt="close" data-micromodal-close>
-      </button>
-
-      <div class="popup-quiz1__body" id="modal-1-content">
-        <div class="quizContent">
-            <h2 class="quizTitle">popup-quiz1__body</h2>
-            <form class="quizContentForm">
-              <div class="formSelect">
-                <div class="formSelectImg">
-                  <picture>
-                    <source type="image/webp" srcset="">
-                    <img src="" alt="Вторичное жилье">
-                  </picture>
+                    <div class="quiz__next">
+                        <button class="btn">Ответить</button>
+                    </div>
                 </div>
-                <input id="secdr" type="radio" name="location">
-                <label for="secdr">Вторичное жилье</label>
-              </div>
-              <div class="formSelect"></div>
-            </form>
+                <div class="quiz__ex">
+                    <div class="quiz__ex_text">
+                        <p>
+                            Тип дома напрямую влияет на стоимость ремонта как правило ниже, так как не нужно учитывать стоимость демонтажаТип дома напрямую влияет на стоимость ремонта как правило ниже, так как не нужно учитывать стоимость демонтажа
+                        </p>
+                    </div>
+                    <div class="quiz__ex_auth">
+                        <div class="quiz__ex_auth_img">
+                            <picture>
+                                <source type="image/webp" srcset="">
+                                <img src="" alt="Author">
+                            </picture>
+                        </div>
+                        <div class="quiz__ex_auth_info">
+                            <div class="name">Имя Фамилия</div>
+                            <div class="pos">Прораб с 5 летним стажем</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
+        <div class="popup-quiz2" id="popupQuiz2" aria-hidden="true">
+    <div class="popup-quiz2__over" tabindex="-1" data-micromodal-close>
+        <div class="popup-quiz2__wr" role="dialog" aria-modal="true">
+            <button class="close-btn" aria-label="Close modal">
+            <img src="./img/close.svg" alt="close" data-micromodal-close>
+            </button>
+            <div class="popup-quiz2__body" id="modal-7-content">
+                <div class="quiz__content">
+                    <h2 class="quiz__title">
+                        Сколько комнат и какая площадь квартиры?
+                        <img src="./img/skidka.png" alt="Discount">
+                    </h2>
+                    
+                    <div class="quiz__form">
+                        <div class="quiz__form_rooms">
+                            <div class="quiz__form_room">
+                                <input id="room1" type="radio" name="rooms">
+                                <label for="room1">Одна комната</label>
+                            </div>
+                            <div class="quiz__form_room">
+                                <input id="room2" type="radio" name="rooms">
+                                <label for="room2">Две комнаты</label>
+                            </div>
+                            <div class="quiz__form_room">
+                                <input id="room3" type="radio" name="rooms">
+                                <label for="room3">Три комнаты</label>
+                            </div>
+                            <div class="quiz__form_room">
+                                <input id="room4" type="radio" name="rooms">
+                                <label for="room4">Четыре комнаты</label>
+                            </div>
+                        </div>
 
+                        <div class="square_range">
+                            <div class="square_range_slider" id="rangeSlider1"></div>
+                            <div class="square_range_value" id="rangeSlider1Value"></div>
+                        </div>
+                    </div>
 
-  </div>
+                    <div class="quiz__pag">
+                        <div class="pag checked"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                        <div class="pag"></div>
+                    </div>
+
+                    <div class="quiz__next">
+                        <button class="btn">Ответить</button>
+                    </div>
+                </div>
+                <div class="quiz__ex">
+                    <div class="quiz__ex_text">
+                        <p>
+                            Тип дома напрямую влияет на стоимость ремонта как правило ниже, так как не нужно учитывать стоимость демонтажаТип дома напрямую влияет на стоимость ремонта как правило ниже, так как не нужно учитывать стоимость демонтажа
+                        </p>
+                    </div>
+                    <div class="quiz__ex_auth">
+                        <div class="quiz__ex_auth_img">
+                            <picture>
+                                <source type="image/webp" srcset="">
+                                <img src="" alt="Author">
+                            </picture>
+                        </div>
+                        <div class="quiz__ex_auth_info">
+                            <div class="name">Имя Фамилия</div>
+                            <div class="pos">Прораб с 5 летним стажем</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
         <!-- AD -->

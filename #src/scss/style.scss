@@ -1,6 +1,7 @@
 //LIBS
 @import './libs/swiper.scss';
 @import './libs/fancybox.scss';
+@import './libs/nouislider.scss';
 
 //OVERALL
 @import './components/vars.scss';
@@ -55,7 +56,8 @@
 @import './popups/popup-error.scss';
 @import './popups/popup-answer.scss';
 @import './popups/ad-popup.scss';
-@import './popups/popup-quiz.scss';
+@import './popups/popup-quiz1.scss';
+@import './popups/popup-quiz2.scss';
 
 //MEDIA
 @import './components/media.scss';

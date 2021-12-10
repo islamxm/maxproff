@@ -4,6 +4,8 @@ import Swiper from './libs/swiper.js';
 import { Fancybox, Carousel, Panzoom} from '@fancyapps/ui';
 import mixitup from 'mixitup';
 import MicroModal from 'micromodal';
+import noUiSlider from 'nouislider';
+import wNumb from 'wnumb';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -1303,12 +1305,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 	}	
+
+	const quizRange1 = document.querySelector('#rangeSlider1');
+	const quizRange1Value = document.querySelector('#rangeSlider1Value');
+
+	if(quizRange1) {
+		noUiSlider.create(quizRange1, {
+			start: [0],
+			step: 1,
+			connect: [true, false],
+			range: {
+				'min': [1],
+				'max': [250]
+			},
+			tooltips: true,
+			format: wNumb({
+		        decimals: 0,
+		        suffix: 'м2'
+		    }),
+
+
+		})
+
+		quizRange1.noUiSlider.on('update', function(values, handle) {
+			quizRange1Value.innerHTML = values[handle];
+		});
 	
+	}
 
 
 
 
-})
+});
 
 
 

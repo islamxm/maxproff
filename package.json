@@ -40,6 +40,8 @@
   ],
   "dependencies": {
     "@fancyapps/ui": "^4.0.8",
-    "micromodal": "^0.4.6"
+    "micromodal": "^0.4.6",
+    "nouislider": "^15.5.0",
+    "wnumb": "^1.2.0"
   }
 }

@@ -115,3 +115,89 @@ body {
     padding-top: 20px;
 }
 
+
+.quiz__pag {
+    display: flex;
+    .pag {
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        border: 3px solid $green;
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            background-color: $green;
+            top: calc(50% - 2.5px);
+            left: calc(50% - 2.5px);
+            display: none;
+        }
+
+        margin: 0 2.5px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .pag.checked {
+        &:after {
+            display: block;
+        }
+    }
+}
+
+.square_range {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+
+    .square_range_slider {
+        max-width: 273px;
+        width: 100%;
+        background-color: #D1D1D1;
+        height: 6px;
+        border: none;
+
+        .noUi-base {
+
+            .noUi-connect {
+                background-color: $blue;
+            }
+
+            .noUi-handle {
+                width: 24px;
+                height: 24px;
+                background-color: $blue;
+                border: 2px solid #fff;
+                box-shadow: none;
+                border-radius: 100%;
+                top: -9px;
+                cursor: pointer;
+
+                &:after {
+                    display: none;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .square_range_value {
+        margin-left: 25px;
+    }
+}
+
