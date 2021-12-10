@@ -1328,7 +1328,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		quizRange1.noUiSlider.on('update', function(values, handle) {
-			quizRange1Value.innerHTML = values[handle];
+			quizRange1Value.innerHTML = values[handle].substring(0, values[handle].length - 2);
 		});
 	
 	}
