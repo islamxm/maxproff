@@ -11,6 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	MicroModal.init();
 
+
+
+
+	/*MouseOut*/
+	const popupCalcNext = document.querySelector('#popupCalcNext');
+
+	if(popupCalcNext) {
+		document.addEventListener('mouseout', mouseout);
+
+		function mouseout(e) {
+			if(Math.round(e.x) >= 0 && Math.round(e.y) <= 0) {
+				MicroModal.show('popupCalcNext');
+			}
+		}
+	}
+
 	/*Form range slider*/
 	
 	let rangeInput = document.querySelector('.range');
@@ -1280,21 +1296,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
-	if(portItemContent == true) {
+	if(portItemTabsParent) {
 		hidePortItemTabContet();
-	}
-
-	if(portItemContent == true) {
 		showPortItemTabContent(0);
 	}
 
+	
 
-	if(portItemContent == true) {
+
+	if(portItemTabsParent) {
 		portItemTabsParent.addEventListener('click', (e) => {
 		const tar = e.target;
-		console.log(tar);
 		const tab = tar.parentNode;
-		console.log(tab);
 		if(tab && tab.classList.contains('port-item__gallery_tab')) {
 			portItemTabs.forEach((i, index) => {
 				if(tab == i) {

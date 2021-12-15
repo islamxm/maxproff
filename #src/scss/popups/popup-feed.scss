@@ -61,7 +61,7 @@
 			max-width: 251px;
 
 			span {
-				color: $green;
+				color: var(--main_theme);
 			}
 		}
 
@@ -107,7 +107,7 @@
 			line-height: 15px;
 			text-align: center;
 			a {
-				color: $green;
+				color: var(--main_theme);
 			}
 		}
 	}

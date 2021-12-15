@@ -48,7 +48,7 @@
                             <h3 class="article-page__ex_title">Читайте так же</h3>
                             <div class="article-page__ex_content">
 
-                                <article class="article-page__ex_item">
+                                <a href="#" class="article-page__ex_item">
                                     <div class="article-page__ex_item_img">
                                         
                                     </div>
@@ -65,9 +65,9 @@
                                             </p>
                                         </div>
                                     </div>
-                                </article>
+                                </a>
 
-                                <article class="article-page__ex_item">
+                                <a href="#" class="article-page__ex_item">
                                     <div class="article-page__ex_item_img">
                                         
                                     </div>
@@ -84,9 +84,9 @@
                                             </p>
                                         </div>
                                     </div>
-                                </article>
+                                </a>
 
-                                <article class="article-page__ex_item">
+                                <a href="#" class="article-page__ex_item">
                                     <div class="article-page__ex_item_img">
                                         
                                     </div>
@@ -103,7 +103,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                </article>
+                                </a>
 
 
                             </div>
@@ -113,15 +113,24 @@
             </div>
             <!-- @@include('./blocks/consult.html') -->
         </main>
+        <!-- Футер -->
         @@include('./blocks/footer.html')
+
+        <!-- Меню для бургера -->
         @@include('./blocks/header-burger-menu.html')
 
-        <!-- POPUPS -->
+        <!-- Все модалки -->
         @@include('./blocks/popup-feed.html')
         @@include('./blocks/popup-calc-next.html')
         @@include('./blocks/popup-calc-feed.html')
         @@include('./blocks/popup-error.html')
         @@include('./blocks/popup-answer.html')
+        
+        <!-- Вот здесь будет разменка квиза -->
+
+
+        <!-- AD -->
+        @@include('./blocks/ad-popup.html')
         <script src="./js/bundle.js"></script>
     </body>
 </html>

@@ -1,11 +1,11 @@
 .ad-popup {
 	padding: 7px 6px;
-	background: #6CAC3D;
+	background: var(--main_theme);
 	border-radius: 4px;
 	position: fixed;
 	bottom: 52px;
 	left: 120px;
-	z-index: 100000000;
+	z-index: 100000;
 	max-width: 300px;
 	&__in {
 		display: flex;
@@ -43,7 +43,7 @@
 
 	.btn {
 		background-color: #fff;
-		color: $green;
+		color: var(--main_theme);
 		width: 100%;
 		padding: 10px 0;
 		font-weight: 700;

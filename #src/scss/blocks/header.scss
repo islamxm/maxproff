@@ -29,6 +29,7 @@
 		align-items: center;
 		padding: 23px 0;
 		&_logo {
+			max-width: 140px;
 
 		}
 
@@ -90,8 +91,8 @@
 	}
 
 	&__bottom {
-		border-top: 1px solid $green;
-		border-bottom: 1px solid $green;
+		border-top: 1px solid var(--main_theme);
+		border-bottom: 1px solid var(--main_theme);
 		&_list {
 			display: flex;
 			justify-content: space-between;
@@ -103,7 +104,7 @@
 
 				&:hover {
 					.header__bottom_item {
-						background-color: $green;
+						background-color: var(--main_theme);
 					}
 					.header__bottom_item_menu {
 						opacity: 1;
@@ -151,7 +152,7 @@
 					border-radius: 3px;
 					border: 1px solid #FFF;
 					&:hover {
-						border-color: $green;
+						border-color: var(--main_theme);
 					}
 				}
 			}
@@ -194,7 +195,7 @@
 
 				&_mob {
 					display: block;
-					border-top: 1px solid $green;
+					border-top: 1px solid var(--main_theme);
 				}
 
 				&_list_mob {

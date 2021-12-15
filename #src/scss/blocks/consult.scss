@@ -1,5 +1,5 @@
 .consult {
-	background-color: $green;
+	background-color: var(--main_theme);
 	padding: 25px 0;
 
 
@@ -41,7 +41,7 @@
 
 		&:hover {
 			background-color: #fff;
-			color: $green;
+			color: var(--main_theme);
 			border-color: #fff;
 		}
 	}

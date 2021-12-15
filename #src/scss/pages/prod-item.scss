@@ -184,7 +184,7 @@
 						}
 						span {
 							font-weight: 700;
-							color: $green;
+							color: var(--main_theme);
 							font-size: 16px;
 							line-height: 19px;
 							margin-right: 11px;
@@ -232,7 +232,7 @@
 					&_link {
 						font-size: 14px;
 						line-height: 16px;
-						color: $green;
+						color: var(--main_theme);
 						padding-left: 23px;
 						
 						&:hover {
@@ -521,11 +521,11 @@
 			.prod-item__dop_item_head {
 				&:before {
 					transform: rotate(0);
-					background-color: $green;
+					background-color: var(--main_theme);
 				}
 
 				&:after {
-					background-color: $green;
+					background-color: var(--main_theme);
 				}
 			}
 		}

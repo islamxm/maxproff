@@ -1,33 +1,38 @@
 /*COLORS ====================*/
 
 $black: #171616;
-$green: #6CAC3D;
 $blue: #2D4872;
 $dgray: #C4C4C4;
 $lgray: #F2F2F2;
-$hgreen: #82C054;
+
+
+:root {
+
+	--main_theme: #6CAC3D;
+	--main_theme_hover: #82C054;
+}
 
 
 @mixin btn-transparent {
 	padding: 13px 23px;
-	border: 1px solid $green;
+	border: 1px solid var(--main_theme);
 	cursor: pointer;
 	background-color: #fff;
 	font-size: 16px;
 	line-height: 18.75px;
 	font-weight: 500;
-	color: $green;
+	color: var(--main_theme);
 	transition: all .2s ease;
 	border-radius: 3px;
 
 	&:hover {
 		color: #fff;
-		background-color: $green;
+		background-color: var(--main_theme);
 	}
 }
 
 @mixin btn {
-	background-color: $green;
+	background-color: var(--main_theme);
 	transition: all .2s ease;
 	color: #fff;
 	font-weight: 700;
@@ -36,7 +41,7 @@ $hgreen: #82C054;
 	border-radius: 4px;
 
 	&:hover {
-		background-color: #82C054;
+		background-color: var(--main_theme_hover);
 	}
 
 	&:active {
@@ -46,5 +51,5 @@ $hgreen: #82C054;
 
 @mixin click {
 	transform: scale(0.97);
-	background-color: #52971F
+	background-color: #52971F;
 }

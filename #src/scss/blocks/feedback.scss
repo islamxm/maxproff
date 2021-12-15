@@ -17,7 +17,7 @@
 		max-width: 251px;
 
 		span {
-			color: $green;
+			color: var(--main_theme);
 		}
 	}
 
@@ -62,7 +62,7 @@
 			line-height: 15.23px;
 			max-width: 305px;
 			a {
-				color: $green;
+				color: var(--main_theme);
 			}
 		}
 	}

@@ -52,7 +52,7 @@
 				font-weight: 700;
 
 				span {
-					color: $green;
+					color: var(--main_theme);
 					font-size: 18px;
 					line-height: 21px;
 					text-transform: uppercase;
@@ -166,7 +166,7 @@
 				&_price {
 					padding-bottom: 20px;
 					// display: block;
-					color: $green;
+					color: var(--main_theme);
 					font-weight: 700;
 					display: flex;
 					justify-content: space-between;

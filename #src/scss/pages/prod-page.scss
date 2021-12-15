@@ -70,7 +70,7 @@
 					content: '';
 					width: 9px;
 					height: 9px;
-					background-color: $green;
+					background-color: var(--main_theme);
 					border-radius: 100%;
 					left: 0;
 					top: calc(50% - 4.5px);
@@ -87,7 +87,7 @@
 
 		&_tel {
 			font-weight: 700;
-			color: $green;
+			color: var(--main_theme);
 			font-size: 18px;
 			line-height: 21px;
 			margin-bottom: 12px;
