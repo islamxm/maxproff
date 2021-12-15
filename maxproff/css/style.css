@@ -1835,11 +1835,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 /*COLORS ====================*/
-:root {
-  --main_theme: #6CAC3D;
-  --main_theme_hover: #82C054;
-}
-
 * {
   padding: 0;
   margin: 0;
