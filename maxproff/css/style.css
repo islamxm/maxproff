@@ -1883,8 +1883,14 @@ img, picture {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  padding-top: 160px;
 }
 
+@media (max-width: 767px) {
+  .main {
+    padding-top: 0;
+  }
+}
 html {
   height: 100%;
 }
@@ -2235,6 +2241,12 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10000;
 }
 .header__inner {
   padding-bottom: 0;

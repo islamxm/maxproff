@@ -39,7 +39,15 @@ img, picture {
 .main {
     overflow-x: hidden;
     flex: 1 0 auto;
+    padding-top: 160px;
 
+}
+
+@media (max-width: 767px) {
+
+    .main {
+        padding-top: 0;
+    }
 }
 
 html {
