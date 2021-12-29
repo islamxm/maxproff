@@ -15,15 +15,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	/*MouseOut*/
+	const locSt = window.localStorage;
 	const popupCalcNext = document.querySelector('#popupCalcNext');
 
 	if(popupCalcNext) {
 		document.addEventListener('mouseout', mouseout);
 
+
+		if(locSt.getItem('showed') == true) {
+			document.removeEventListener('mouseout', mouseout);
+		}
 		function mouseout(e) {
-			if(Math.round(e.x) >= 0 && Math.round(e.y) <= 0) {
-				MicroModal.show('popupCalcNext');
+			if(!locSt.getItem('showed') == true) {
+				if(Math.round(e.x) >= 0 && Math.round(e.y) <= 0) {
+					MicroModal.show('popupCalcNext');
+					locSt.setItem('showed', true);
+				}
 			}
+			
+
+			
 		}
 	}
 
